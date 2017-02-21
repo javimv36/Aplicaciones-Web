@@ -1,0 +1,10 @@
+body{
+	background-color: #000000;
+	color: #00CC00;
+	font-family: monospace;
+}
+
+html *
+{
+   font-size: 18px;
+}
