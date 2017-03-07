@@ -3,7 +3,6 @@ body {
 	padding: 0;
 	text-align: left;
   background-color: #dadada;
-	color : #cccccc;
 	height: 1000px;
 }
 
@@ -13,12 +12,15 @@ body {
 	width: 34%;
 	color:#48575c;
 	background-color: white;
+  text-align: left;
 }
 #main{
 	float: left;
 	width: 65%;
 	height: 100%;
 	background-color: white;
+  text-align: left;
+  margin-left:10px;
 }
 #footer {
 	width: 100%;
@@ -32,8 +34,8 @@ body {
 	height: 100%;
 	margin: 0 auto;
 	text-align: center;
-
   background-color: #ffffff;
+  font-family: calibri;
 }
 
 ul.topnav {
