@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+  background-color: #dadada;
+	height: 1000px;
+
+}
+
+#sidebar{
+	float: right;
+	overflow: hidden;
+	width: 30%;
+	color:#48575c;
+	background-color: white;
+  text-align: justify;
+	font-family: sans-serif;
+	margin-right: 20px;
+}
+#main{
+	float: left;
+	width: 65%;
+	font-family: sans-serif;
+  text-align: justify;
+  margin-left:20px;
+	margin-right: 10px;
+	color: #474747;
+}
+#footer {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+  background-color: #232b3e;
+	font-family: sans-serif;
+	color: #d6d6d6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#container {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+  font-family: calibri;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+		padding-top: 0;
+    overflow: hidden;
+    background-color: #3b7aa8;
+		font-family: sans-serif;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	float: left;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #203a73;}
