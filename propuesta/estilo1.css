@@ -13,7 +13,7 @@ body {
 	width: 30%;
 	color:#48575c;
 	background-color: white;
-  text-align: justify;
+	text-align: justify;
 	font-family: sans-serif;
 	margin-right: 20px;
 }
@@ -21,16 +21,32 @@ body {
 	float: left;
 	width: 65%;
 	font-family: sans-serif;
-  text-align: justify;
-  margin-left:20px;
+	text-align: justify;
+	margin-left:20px;
 	margin-right: 10px;
 	color: #474747;
 }
+
+#main a{
+	font-size:25px;
+}
+
+#main td {
+	font-size: 18px;
+}
+
+#main img{
+	width: 100px;
+}
+#sidebar img{
+width:50px;
+}
 #footer {
+	float: down;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
-  background-color: #232b3e;
+	background-color: #232b3e;
 	font-family: sans-serif;
 	color: #d6d6d6;
 	padding-top: 10px;
@@ -56,12 +72,10 @@ ul.topnav {
 		font-family: sans-serif;
 }
 
-/* Float the list items side by side */
 ul.topnav li {
 	float: left;
 }
 
-/* Style the links inside the list items */
 ul.topnav li a {
 
     display: inline-block;
@@ -73,5 +87,4 @@ ul.topnav li a {
     font-size: 17px;
 }
 
-/* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #203a73;}
