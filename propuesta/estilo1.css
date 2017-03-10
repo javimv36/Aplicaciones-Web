@@ -38,9 +38,21 @@ body {
 #main img{
 	width: 100px;
 }
-#sidebar img{
-width:50px;
+
+#main table{
+	width: 100%;
+	align: center;
+	CELLPADDING:10;
 }
+
+#sidebar img{
+	width:50px;
+}
+
+#sidebar table{
+	width:300px;
+}
+
 #footer {
 	float: down;
 	width: 100%;
