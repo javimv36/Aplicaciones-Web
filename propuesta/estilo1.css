@@ -40,9 +40,10 @@ body {
 }
 
 #main table{
-	width: 100%;
-	align: center;
-	CELLPADDING:10;
+	border:1;
+	width: 700px;
+	padding: 10px;
+	border-spacing: 18px;
 }
 
 #sidebar img{
