@@ -17,7 +17,19 @@
 <div id="container">
   <div id=main>
     	<h1>Contacto<h1>
-      <hr>
+      		<form action="mailto:" method="post" enctype="textplain">
+			Nombre:
+			<input type="text" name="nombre"><br>
+			Mail:
+			<input type="text" name="mail"><br>
+			<br>Motivo de la consulta:<br>
+			<br><input type="radio" name="consulta" value="evaluacion" checked>Evaluacion<br>
+			<input type="radio" name="consulta" value="sugerencias">Sugerencias<br>
+			<input type="radio" name="consulta" value="criticas">Criticas<br>
+			<br><input type="checkbox" name="marcar">Marque esta casilla para verificar que ha leido nuestros terminos y condiciones del servicio.<br>
+			<br><textarea name="cuadro" rows="5" cols="50">Escriba su consulta</textarea><br>
+			<br><input type="submit" value="Submit">
+		</form>
       </div>
 
       <div id="sidebar">
