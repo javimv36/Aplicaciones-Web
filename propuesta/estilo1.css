@@ -46,6 +46,10 @@ body {
 	border-spacing: 18px;
 }
 
+#main form{
+	font-size: 18px;
+}
+
 #sidebar img{
 	width:50px;
 }
