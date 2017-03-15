@@ -4,7 +4,7 @@ body {
 	text-align: left;
   background-color: #dadada;
 	height: 1000px;
-
+	font-family: sans-serif;
 }
 
 #sidebar{
@@ -14,13 +14,11 @@ body {
 	color:#48575c;
 	background-color: white;
 	text-align: justify;
-	font-family: sans-serif;
 	margin-right: 20px;
 }
 #main{
 	float: left;
 	width: 65%;
-	font-family: sans-serif;
 	text-align: justify;
 	margin-left:20px;
 	margin-right: 10px;
@@ -34,8 +32,10 @@ body {
 #main td {
 	font-size: 18px;
 }
-
-#main img{
+.sketch {
+	width: 100%;
+}
+#main table img{
 	width: 100px;
 }
 
@@ -50,7 +50,7 @@ body {
 	font-size: 18px;
 }
 
-#sidebar img{
+.smallImage{
 	width:50px;
 }
 
@@ -64,7 +64,6 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	background-color: #232b3e;
-	font-family: sans-serif;
 	color: #d6d6d6;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -76,7 +75,6 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	background-color: white;
-  font-family: calibri;
 }
 
 ul.topnav {
@@ -86,7 +84,7 @@ ul.topnav {
 		padding-top: 0;
     overflow: hidden;
     background-color: #3b7aa8;
-		font-family: sans-serif;
+
 }
 
 ul.topnav li {
