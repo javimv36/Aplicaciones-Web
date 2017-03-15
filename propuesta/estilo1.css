@@ -7,20 +7,18 @@
 
 body {
 	margin: 0;
-	padding-bottom: 6rem;
 	text-align: justify;
   background-color: white;
-	height: 100%;
 	font-family: sans-serif;
 }
 
 #sidebar{
 	float: right;
-	overflow: hidden;
 	width: 30%;
 	color:#48575c;
 	margin-right: 20px;
 }
+
 #main{
 	float: left;
 	width: 65%;
@@ -63,7 +61,7 @@ body {
 	clear: both;
 	position: relative;
 	z-index: 10;
-	height: 20em;
+	height: 150px;
 	padding-top: 10px;
 	margin-top: -3em;
 }
@@ -75,7 +73,6 @@ ul.topnav {
 		padding-top: 0;
     overflow: hidden;
     background-color: #3b7aa8;
-
 }
 
 ul.topnav li {
