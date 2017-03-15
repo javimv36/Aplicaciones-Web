@@ -2,9 +2,9 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-  background-color: #dadada;
-	height: 1000px;
-
+	background-color: #dadada;
+	height: 1890px;
+	font-family: sans-serif;
 }
 
 #sidebar{
@@ -14,13 +14,11 @@ body {
 	color:#48575c;
 	background-color: white;
 	text-align: justify;
-	font-family: sans-serif;
 	margin-right: 20px;
 }
 #main{
 	float: left;
 	width: 65%;
-	font-family: sans-serif;
 	text-align: justify;
 	margin-left:20px;
 	margin-right: 10px;
@@ -34,8 +32,10 @@ body {
 #main td {
 	font-size: 18px;
 }
-
-#main img{
+.sketch {
+	width: 100%;
+}
+#main table img{
 	width: 100px;
 }
 
@@ -46,8 +46,22 @@ body {
 	border-spacing: 18px;
 }
 
-#sidebar img{
+#main form{
+	font-size: 18px;
+}
+
+.smallImage{
 	width:50px;
+}
+
+div.members {
+	font-size: 16px;
+	margin-left: 36px;
+}
+
+img.members {
+	width: 150px;
+	height: 250px;
 }
 
 #sidebar table{
@@ -56,14 +70,13 @@ body {
 
 #footer {
 	float: down;
-	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #232b3e;
-	font-family: sans-serif;
 	color: #d6d6d6;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width: 100%;
 }
 
 #container {
@@ -72,7 +85,6 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	background-color: white;
-  font-family: calibri;
 }
 
 ul.topnav {
@@ -82,7 +94,7 @@ ul.topnav {
 		padding-top: 0;
     overflow: hidden;
     background-color: #3b7aa8;
-		font-family: sans-serif;
+
 }
 
 ul.topnav li {

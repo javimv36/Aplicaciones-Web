@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang = "es">
     <head>
-    	<title>SocialTravel - contacto</title>
+    	<title>PlanToTravel - Contacto</title>
       <link id="estilo" rel="stylesheet" type="text/css" href="estilo1.css" />
       <meta charset="utf-8">
     </head>
@@ -16,8 +16,20 @@
      </ul>
 <div id="container">
   <div id=main>
-    	<h1>Contacto<h1>
-      <hr>
+    	<h1>Contacto</h1>
+      		<form action="mailto:a@a.com" method="post" enctype="textplain">
+			Nombre:
+			<input type="text" name="nombre"><br>
+			Mail:
+			<input type="text" name="mail"><br>
+			<br>Motivo de la consulta:<br>
+			<br><input type="radio" name="consulta" value="evaluacion" checked>Evaluacion<br>
+			<input type="radio" name="consulta" value="sugerencias">Sugerencias<br>
+			<input type="radio" name="consulta" value="criticas">Criticas<br>
+			<br><input type="checkbox" name="marcar">Marque esta casilla para verificar que ha leido nuestros terminos y condiciones del servicio.<br>
+			<br><textarea name="cuadro" rows="5" cols="50">Escriba su consulta</textarea><br>
+			<br><input type="submit" value="Submit">
+		</form>
       </div>
 
       <div id="sidebar">
