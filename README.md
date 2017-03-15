@@ -4,7 +4,7 @@ Repositorio en el que desarrollaremos la práctica en grupo de la asignatura Apl
 
 ---
 
-##Propuesta
+## Propuesta
 
 Desarrollaremos una web para vender viajes y excursiones.
 
@@ -16,7 +16,7 @@ Podrán configurar a su gusto las excursiones durante el viaje.
 
 ---
 
-##Participantes:
+## Participantes:
 - Gonzalo
 - Carolina
 - Lionel
