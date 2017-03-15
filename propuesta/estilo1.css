@@ -39,7 +39,7 @@ body {
 #main a{
 	font-size:25px;
 }
-
+/*
 #main td {
 	font-size: 18px;
 }
@@ -47,20 +47,17 @@ body {
 #main table img{
 	width: 100px;
 }
-
-#main table{
-	border:1;
-	width: 700px;
-	padding: 10px;
-	border-spacing: 18px;
+*/
+.tabla{
+	width:100%;
+	text-align:left;
+}
+td.tabla{
+	width:100px;
 }
 
 #main form{
 	font-size: 18px;
-}
-
-#sidebar table{
-	width:300px;
 }
 
 #footer {
