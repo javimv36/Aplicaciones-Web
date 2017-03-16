@@ -1,80 +1,83 @@
 .sketch {
-	width: 100%;
+    width: 100%;
 }
-.smallImage{
-	width:50px;
+
+.smallImage {
+    width: 50px;
 }
 
 .members {
-	font-size: 16px;
-	margin-left: 36px;
+    font-size: 16px;
+    margin-left: 36px;
 }
 
 img.members {
-	width: 150px;
-	height: 250px;
+    width: 150px;
+    height: 250px;
 }
+
 body {
-	margin: 0;
-	text-align: justify;
-  	background-color: white;
-	font-family: sans-serif;
+    margin: 0;
+    text-align: justify;
+    background-color: white;
+    font-family: sans-serif;
 }
 
-#sidebar{
-	float: right;
-	width: 30%;
-	color:#48575c;
-	margin-right: 20px;
+#sidebar {
+    float: right;
+    width: 30%;
+    color: #48575c;
+    margin-right: 20px;
 }
 
-#main{
-	float: left;
-	width: 65%;
-	margin-left:20px;
-	margin-right: 10px;
-	color: #474747;
+#main {
+    float: left;
+    width: 65%;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #474747;
 }
 
-#main a{
-	font-size:25px;
+#main a {
+    font-size: 25px;
 }
 
-.tabla{
-	width:100%;
-	text-align:left;
-}
-td.tabla{
-	width:100px;
+.tabla {
+    width: 100%;
+    text-align: left;
 }
 
-#main form{
-	font-size: 18px;
+td.tabla {
+    width: 100px;
+}
+
+#main form {
+    font-size: 18px;
 }
 
 #footer {
-  	text-align: center;
-	background-color: #4e94c1;
-	color: #ffffff;
-	clear: both;
-	position: relative;
-	z-index: 10;
-	height: 150px;
-	padding-top: 10px;
-	margin-top: -3em;
+    text-align: center;
+    background-color: #4e94c1;
+    color: #ffffff;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 150px;
+    padding-top: 10px;
+    margin-top: -3em;
 }
 
 ul.topnav {
     list-style-type: none;
     margin: 0;
     padding-left: 0;
-	padding-top: 0;
+    padding-top: 0;
     overflow: hidden;
     background-color: #3b7aa8;
 }
 
 ul.topnav li {
-	float: left;
+    float: left;
 }
 
 ul.topnav li a {
@@ -88,5 +91,5 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-	background-color: #203a73;
+    background-color: #203a73;
 }
