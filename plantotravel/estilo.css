@@ -1,0 +1,105 @@
+@font-face {
+    font-family: fuenteTitulo;
+    src: url(titulo.otf);
+}
+
+@font-face {
+    font-family: fuenteParrafo;
+    src: url(parrafo.otf);
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: fuenteTitulo;
+}
+
+p {
+    font-family: fuenteParrafo;
+}
+
+.menu {
+    margin: 0;
+    overflow: hidden;
+    background-color: #3b7aa8;
+    font-family: fuenteParrafo;
+}
+
+.menu ul {
+    list-style-type: none;
+    float: left;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+.menu ul li a:hover {
+    background-color: dodgerblue;
+}
+
+a.tituloMenu {
+    text-decoration: none;
+    float: left;
+    font-family: fuenteTitulo;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.login {
+    float: right;
+    padding: 25px 20px;
+    color: white;
+    font-family: fuenteParrafo;
+    font-size: 20px;
+}
+
+form.login {
+    display: inline;
+}
+
+form.login * {
+    float: left;
+}
+
+.sidebar {
+    width: 19%;
+    float: left;
+}
+
+#main {
+    width: 59%;
+    float: left;
+    padding: 10px;
+}
+
+#footer {
+    clear: both;
+    padding: 20px;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+#container {
+    padding: 10px;
+    margin: 10px;
+}
