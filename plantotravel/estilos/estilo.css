@@ -1,11 +1,11 @@
 @font-face {
     font-family: fuenteTitulo;
-    src: url(fonts/titulo.otf);
+    src: url(../fonts/titulo.otf);
 }
 
 @font-face {
     font-family: fuenteParrafo;
-    src: url(fonts/parrafo.otf);
+    src: url(../fonts/parrafo.otf);
 }
 
 body {
@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
     font-family: fuenteParrafo;
-    font-style: bold;
+    font-weight: bold;
 }
 
 p,
