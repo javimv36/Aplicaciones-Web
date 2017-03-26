@@ -14,11 +14,15 @@ body {
 
 h1,
 h2,
-h3,
+h3 {
+    font-family: fuenteTitulo;
+}
+
 h4,
 h5,
 h6 {
-    font-family: fuenteTitulo;
+    font-family: fuenteParrafo;
+    font-style: bold;
 }
 
 p {
@@ -82,14 +86,23 @@ form.login * {
 }
 
 .sidebar {
-    width: 19%;
+    width: 20%;
     float: left;
+    background-color: white;
+}
+
+.sidebarContainer {
+    padding: 10px;
 }
 
 #main {
-    width: 59%;
+    width: 60%;
     float: left;
+}
+
+#mainContainer {
     padding: 10px;
+    float: inherit;
 }
 
 #footer {
@@ -100,6 +113,5 @@ form.login * {
 }
 
 #container {
-    padding: 10px;
     margin: 10px;
 }

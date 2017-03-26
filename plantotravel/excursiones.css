@@ -1,0 +1,40 @@
+.dia {
+    padding: 10px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+.excursion {
+    background-color: white;
+    float: left;
+    margin: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+.datosExcursion * {
+    float: inherit;
+}
+
+.datosExcursion {
+    width: 75%;
+    float: left;
+}
+
+.excursion img {
+    width: 15%;
+    float: left;
+}
+
+.botonCompra {
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    float: right;
+    background-color: orange;
+}
