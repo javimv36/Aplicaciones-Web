@@ -1,11 +1,11 @@
 @font-face {
     font-family: fuenteTitulo;
-    src: url(titulo.otf);
+    src: url(fonts/titulo.otf);
 }
 
 @font-face {
     font-family: fuenteParrafo;
-    src: url(parrafo.otf);
+    src: url(fonts/parrafo.otf);
 }
 
 body {
