@@ -25,7 +25,8 @@ h6 {
     font-style: bold;
 }
 
-p {
+p,
+ul li {
     font-family: fuenteParrafo;
 }
 

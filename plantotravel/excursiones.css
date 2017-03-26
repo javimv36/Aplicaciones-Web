@@ -5,6 +5,11 @@
     margin: 5px;
     border: 1px solid darkgrey;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.dia:hover {
+    background-color: orange;
 }
 
 .excursion {
