@@ -43,3 +43,9 @@
     float: right;
     background-color: orange;
 }
+
+#recibo {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+}
