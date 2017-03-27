@@ -3,7 +3,8 @@
     float: left;
     text-align: center;
     margin: 5px;
-    border: 1px solid darkgrey;
+    background-color: lightgrey;
+    /*border: 1px solid darkgrey;*/
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -16,12 +17,12 @@
     background-color: white;
     float: left;
     margin: 5px;
-    border: 1px solid darkgrey;
+  /*  border: 1px solid darkgrey;*/
     border-radius: 5px;
 }
 
-.datosExcursion * {
-    float: inherit;
+.excursion:hover {
+  background-color: lightgrey;
 }
 
 .datosExcursion {
@@ -49,7 +50,7 @@
 }
 
 .excursionPopular {
-    border: 1px solid darkgrey;
+  /*  border: 1px solid darkgrey;*/
     border-radius: 5px;
     margin: 5px;
     padding: 5px;

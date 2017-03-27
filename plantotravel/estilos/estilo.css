@@ -14,19 +14,16 @@ body {
 
 h1,
 h2,
-h3 {
-    font-family: fuenteTitulo;
-}
-
+h3,
 h4,
 h5,
 h6 {
-    font-family: fuenteParrafo;
-    font-weight: bold;
+    font-family: fuenteTitulo;
 }
 
 p,
-ul li {
+ul li,
+a {
     font-family: fuenteParrafo;
 }
 
@@ -53,7 +50,7 @@ ul li {
     padding: 10px 15px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .menu ul li a:hover {
@@ -76,7 +73,7 @@ a.tituloMenu {
     padding: 25px 20px;
     color: white;
     font-family: fuenteParrafo;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 form.login {
@@ -111,7 +108,6 @@ form.login * {
 
 #mainContainer {
     padding: 10px;
-    float: inherit;
 }
 
 #footer {
