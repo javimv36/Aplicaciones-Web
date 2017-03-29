@@ -57,6 +57,15 @@
 .botonCompra {
     font-weight: bold;
     text-align: center;
+    padding: 10px;
+    background-color: skyblue;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.botonElegir {
+    font-weight: bold;
+    text-align: center;
     width: 10%;
     padding-bottom: 10px;
     padding-top: 10px;
