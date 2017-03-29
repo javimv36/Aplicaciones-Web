@@ -52,6 +52,7 @@ a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .menu ul li a:hover {

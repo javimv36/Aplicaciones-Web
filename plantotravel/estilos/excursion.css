@@ -1,0 +1,26 @@
+.excursion #centro *{
+	float: left;
+}
+
+.excursion #centro #imagen{
+	width: 30%;
+}
+
+.excursion #centro #descripcion{
+	width: 70%;
+}
+
+.excursion #abajo #plazas{
+	width: 50%;
+	float: right;
+}
+
+.excursion #abajo #precio{
+	width: 50%;
+	float: left;
+}
+
+.textoComentario{
+	height: 100px;
+    width: 100%; 
+}
