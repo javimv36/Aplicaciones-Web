@@ -30,7 +30,7 @@ a {
 .menu {
     margin: 0;
     overflow: hidden;
-    background-color: #3b7aa8;
+    background-color: royalblue;  /*#3b7aa8;*/
     font-family: fuenteParrafo;
 }
 
