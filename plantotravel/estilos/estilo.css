@@ -30,7 +30,8 @@ a {
 .menu {
     margin: 0;
     overflow: hidden;
-    background-color: royalblue;  /*#3b7aa8;*/
+    background-color: skyblue;
+    /*#3b7aa8;*/
     font-family: fuenteParrafo;
 }
 
@@ -113,7 +114,7 @@ form.login * {
 #footer {
     clear: both;
     padding: 20px;
-    background-color: lightskyblue;
+    background-color: skyblue;
     text-align: center;
 }
 
