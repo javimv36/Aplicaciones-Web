@@ -1,26 +1,49 @@
-.excursion #centro *{
-	float: left;
+.excursion #centro * {
+    float: left;
 }
 
-.excursion #centro #imagen{
-	width: 30%;
+.excursion #centro #imagen {
+    width: 20%;
 }
 
-.excursion #centro #descripcion{
-	width: 70%;
+.excursion #centro #descripcion {
+    text-align: justify;
+    width: 60%;
 }
 
-.excursion #abajo #plazas{
-	width: 50%;
-	float: right;
+#dcha {
+    width: 20%;
+    float: left;
 }
 
-.excursion #abajo #precio{
-	width: 50%;
-	float: left;
+#dcha * {
+    margin: 5px;
+    padding: 5px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.textoComentario{
-	height: 100px;
-    width: 100%; 
+#comentarios {
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+}
+
+.comentario {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+.comentario:hover {
+    background-color: skyblue;
+}
+
+.textoComentario {
+    height: 150px;
+    width: 100%;
 }
