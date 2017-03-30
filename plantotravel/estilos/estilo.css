@@ -89,7 +89,6 @@ form.login * {
 .sidebar {
     width: 20%;
     float: left;
-    background-color: white;
 }
 
 .sidebarContainer {
@@ -104,11 +103,12 @@ form.login * {
 }
 
 #main {
-    width: 60%;
+    width: 80%;
     float: left;
 }
 
 #mainContainer {
+    margin-left: 50px;
     padding: 10px;
 }
 

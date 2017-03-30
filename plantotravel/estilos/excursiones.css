@@ -1,6 +1,6 @@
 #dias {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -45,6 +45,7 @@
 }
 
 .datosExcursion {
+    padding: 5px;
     width: 75%;
     float: left;
 }
@@ -52,6 +53,8 @@
 .excursion img {
     width: 15%;
     float: left;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .botonCompra {
