@@ -100,6 +100,7 @@ form.login * {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    overflow: auto;
 }
 
 #main {
@@ -121,4 +122,20 @@ form.login * {
 
 #container {
     margin: 10px;
+}
+
+.btn {
+    margin: 5px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: lightseagreen;
+    color: white;
+    font-family: fuenteParrafo;
+    font-weight: bold;
+    transition: background-color .3s;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: lightskyblue;
 }
