@@ -4,6 +4,7 @@
 
 .excursion #centro #imagen {
     width: 20%;
+    border-radius: 20px;
 }
 
 .excursion #centro #descripcion {
