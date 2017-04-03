@@ -23,38 +23,34 @@
     <div id="container">
         <div id="main">
             <div id="mainContainer">
-                <h1>Crear excursión</h1>
+                <h1>Modificar excursión</h1>
+                <h2>Nombre de la excursión</h2>
                 <div class="form">
                     <form>
-                        <div class="group">
-                            <input type="text" required>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label>Nombre de la excursión</label>
-                        </div>
-
                         <div class="fileUpload btn">
                             <input type="file" class="upload" />
                         </div>
 
                         <div class="group">
-                            <textarea name="Text1" rows="10"></textarea>
+                            <textarea name="Text1" rows="10">Esta excursion se desarrolla en Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta
+                        cursus elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at
+                        augue facilisis</textarea>
+
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Descripción</label>
                         </div>
-
                         <div id="botom">
                             <div id="izda">
                                 <div class="group">
-                                    <input type="text" required>
+                                    <input type="text" required value="000€">
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
                                     <label>Precio</label>
                                 </div>
 
                                 <div class="group">
-                                    <input type="text" required>
+                                    <input type="text" required value="00">
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
                                     <label>Plazas</label>
@@ -76,7 +72,8 @@
                                 </div>
                             </div>
                         </div>
-                        <input class="btn" type="submit" value="Guardar">
+                        <input class="btn" type="submit" value="Actualizar">
+                        <input class="btn" type="submit" value="Eliminar">
                     </form>
                 </div>
             </div>
