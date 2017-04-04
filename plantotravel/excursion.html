@@ -5,6 +5,7 @@
     <title>PlanToTravel</title>
     <link id="estiloComprartido" rel="stylesheet" type="text/css" href="estilos/estilo.css" />
     <link id="estiloExcursion" rel="stylesheet" type="text/css" href="estilos/excursion.css" />
+        <link id="estiloFormulario" rel="stylesheet" type="text/css" href="estilos/form.css" />
     <meta charset="utf-8">
 </head>
 
@@ -52,13 +53,13 @@
                         <h2>Añadir comentario</h2>
                         <form action="/excursion.html">
                             Asunto <br>
-                            <input type="text" name="asunto"> <br> Comentario <br>
-                            <input type="text" class="textoComentario" name="comentario"><br>
-                            <input type="submit" value="Añadir comentario">
+                            <input type="text" id="asunto" name="asunto"> <br> Comentario <br>
+                            <input type="text" id="textoComentario" name="comentario"><br>
+                            <input type="submit" class="btn" value="Añadir comentario">
                         </form>
                     </div>
                     <div id="listaComentarios">
-                        <p>Lista de comentarios</p>
+                        <h2>Lista de comentarios</h2>
                         <div class="comentario">
                             <p> NombreUsuario </p>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus,

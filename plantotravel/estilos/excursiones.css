@@ -26,11 +26,11 @@
 }
 
 .mañana {
-    background-color: lightskyblue;
+    background-color: #FFF176;
 }
 
 .tarde {
-    background-color: lightseagreen;
+    background-color: #FFB74D;
 }
 
 .excursion {
@@ -41,7 +41,7 @@
 }
 
 .excursion:hover {
-    background-color: skyblue;
+    background-color: #E3F2FD;
 }
 
 .datosExcursion {

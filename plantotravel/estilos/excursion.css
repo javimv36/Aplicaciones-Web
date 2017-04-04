@@ -20,13 +20,13 @@
 #dcha * {
     margin: 5px;
     padding: 5px;
-    background-color: lightseagreen;
+    background-color: #64B5F6;
     border-radius: 5px;
     text-align: center;
 }
 
 #comentarios {
-    width: 100%;
+    width: 90%;
     float: left;
     border-radius: 5px;
 }
@@ -36,15 +36,19 @@
     float: left;
     padding: 5px;
     margin: 5px;
-    border: 1px solid darkgrey;
+    border: 1px solid #BBDEFB;
     border-radius: 5px;
 }
 
 .comentario:hover {
-    background-color: skyblue;
+    background-color: #E3F2FD;
 }
 
-.textoComentario {
+#textoComentario {
     height: 150px;
+    width: 100%;
+}
+
+#asunto{
     width: 100%;
 }

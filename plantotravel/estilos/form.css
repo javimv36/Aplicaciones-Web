@@ -5,12 +5,12 @@
 
 input,
 textarea {
-    font-size: 18px;
+    font-size: 12px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 90%;
     border: none;
-    border-bottom: 1px solid lightseagreen;
+    border-bottom: 1px solid #1E88E5;
 }
 
 input:focus,
@@ -19,7 +19,7 @@ textarea:focus {
 }
 
 label {
-    color: lightseagreen;
+    color: #1E88E5;
     font-size: 18px;
     font-weight: normal;
     pointer-events: none;
@@ -35,12 +35,12 @@ textarea:focus~label,
 input:focus~label,
 input:valid~label {
     top: -50px;
-    font-size: 14px;
-    color: lightskyblue;
+    font-size: 12px;
+    color: #64B5F6;
 }
 
 .bar {
-    position: relative;
+   /* position: relative;*/
     display: block;
     width: 90%;
 }
@@ -51,8 +51,8 @@ input:valid~label {
     height: 2px;
     width: 0;
     bottom: 1px;
-    position: absolute;
-    background: lightskyblue;
+    /*position: absolute;*/
+    background:  #64B5F6;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
