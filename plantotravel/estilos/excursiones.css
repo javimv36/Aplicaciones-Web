@@ -1,6 +1,6 @@
 #dias {
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -12,6 +12,7 @@
     border-radius: 5px;
     transition: 0.3s;
     box-shadow: 0 1px 4px darkslategray;
+    background-color: white;
 }
 
 .dia:hover {
@@ -38,6 +39,7 @@
     /*  border: 1px solid darkgrey;*/
     border-radius: 5px;
     box-shadow: 0 1px 4px darkgray;
+    background-color: white;
 }
 
 .excursion:hover {

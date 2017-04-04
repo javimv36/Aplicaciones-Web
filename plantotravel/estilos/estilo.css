@@ -103,6 +103,7 @@ form.login * {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    box-shadow: 0 1px 4px darkgray;
 }
 
 .bloqueSidebar * {
@@ -114,8 +115,8 @@ form.login * {
     min-width: 300px;
     width: 80%;
     float: left;
-    background-color: white;
-    border-radius: 5px;
+    /*background-color: white;
+    border-radius: 5px;*/
 }
 
 #mainContainer {
@@ -151,4 +152,23 @@ form.login * {
 .btn:hover,
 .btn:focus {
     background-color: #2196F3;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

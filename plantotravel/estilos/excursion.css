@@ -2,6 +2,11 @@
     float: left;
 }
 
+#main {
+    box-shadow: 0 1px 4px darkslategray;
+    background-color: white;
+}
+
 .excursion #centro #imagen {
     width: 20%;
     border-radius: 20px;
@@ -49,6 +54,10 @@
     width: 100%;
 }
 
-#asunto{
+#asunto {
     width: 100%;
+}
+
+#descripcion * {
+    padding: 10px;
 }

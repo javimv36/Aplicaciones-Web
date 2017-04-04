@@ -12,11 +12,43 @@
     <div class="menu">
         <a class="tituloMenu" href="index.html">PlanToTravel</a>
         <ul>
-            <li><a href="vuelos.html">Vuelos</a></li>
-            <li><a href="excursiones.html">Excursiones</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="vuelos.html">Vuelos</a>
+                    <div class="dropdown-content">
+                        <p onclick="window.location='excursiones.html';">Nuevo vuelo</p>
+                        <p onclick="window.location='excursiones.html';">Buscador de vuelos</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="dropdown">
+                    <a href="excursiones.html">Escursiones</a>
+                    <div class="dropdown-content">
+                        <p onclick="window.location='excursiones.html';">Nueva excursión</p>
+                        <p onclick="window.location='excursiones.html';">Buscador de excursiones</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="contacto.html">Contacto</a>
+                    <div class="dropdown-content">
+                        <p onclick="window.location='excursiones.html';">Enlace desplegable</p>
+                    </div>
+                </div>
+            </li>
             <li><a href="estadisticas.html">Estadísticas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="perfil.html">Perfil</a>
+                    <div class="dropdown-content">
+                        <p onclick="window.location='excursiones.html';">Mensajes</p>
+                        <p onclick="window.location='excursiones.html';">Salir</p>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
     <div id="container">
@@ -137,13 +169,13 @@
                     <div class="excursion">
                         <img src="images/excursion1.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Visita al museo de arte contemporáneo</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Tarde</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>50€</h2>
+                        <h4>30 plazas</h4>
                         <div class="btn elegir">
                             <p> Elegir </p>
                         </div>
@@ -151,13 +183,13 @@
                     <div class="excursion">
                         <img src="images/excursion2.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Viaje a la cala del Ángel</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Mañana</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>10€</h2>
+                        <h4>20 plazas</h4>
                         <div class="btn elegir">
                             <p> Elegir </p>
                         </div>
@@ -165,13 +197,13 @@
                     <div class="excursion">
                         <img src="images/excursion3.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Paseo en barco por la desembocadura del Calenhir</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Mañana</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>30€</h2>
+                        <h4>25 plazas</h4>
                         <div class="btn elegir">
                             <p> Elegir </p>
                         </div>
@@ -179,13 +211,13 @@
                     <div class="excursion">
                         <img src="images/excursion4.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Viaje a las ruinas de Erebor</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Turno completo</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>60€</h2>
+                        <h4>20 plazas</h4>
                         <div class="btn elegir">
                             <p> Elegir </p>
                         </div>

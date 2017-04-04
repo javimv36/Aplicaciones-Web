@@ -6,3 +6,8 @@
     width: 50%;
     float: left;
 }
+
+#main {
+    box-shadow: 0 1px 4px darkslategray;
+    background-color: white;
+}
