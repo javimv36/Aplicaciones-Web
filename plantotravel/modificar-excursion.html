@@ -40,21 +40,6 @@
                         <div id="botom">
                             <div id="izda">
                                 <div class="group">
-                                    <input type="text" required value="000€">
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Precio</label>
-                                </div>
-
-                                <div class="group">
-                                    <input type="text" required value="00">
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Plazas</label>
-                                </div>
-                            </div>
-                            <div id="dcha">
-                                <div class="group">
                                     <input type="date" required>
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
@@ -66,6 +51,33 @@
                                     <span class="highlight"></span>
                                     <span class="bar"></span>
                                     <label>Hasta</label>
+                                </div>
+
+                            </div>
+                            <div id="dcha">
+                                <div>
+                                    <div class="group">
+                                        <input type="number" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Precio</label>
+                                    </div>
+
+                                    <div class="group">
+                                        <input type="number" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Plazas</label>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <select id="turno" name="turno">
+                                        <option value="" selected="selected">Elige un turno...</option>
+                                        <option value="manana">Mañana</option>
+                                        <option value="tarde">Tarde</option>
+                                        <option value="completo">Turno completo</option>
+                                        <option value="medio">Medio turno</option>
+                                        </select>
                                 </div>
                             </div>
                         </div>

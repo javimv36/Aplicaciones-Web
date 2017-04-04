@@ -29,11 +29,10 @@ a {
 }
 
 .menu {
-    margin: 0;
-    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #2196F3;
-    /*skyblue;*/
-    /*#3b7aa8;*/
     font-family: fuenteParrafo;
     box-shadow: 0 1px 4px darkslategray;
 }
@@ -90,6 +89,7 @@ form.login * {
 }
 
 .sidebar {
+    min-width: 300px;
     width: 20%;
     float: left;
 }
@@ -111,6 +111,7 @@ form.login * {
 }
 
 #main {
+    min-width: 300px;
     width: 80%;
     float: left;
     background-color: white;
@@ -120,8 +121,6 @@ form.login * {
 #mainContainer {
     margin-left: 50px;
     padding: 10px;
-    background-color: white;
-    border-radius: 5px;
 }
 
 #footer {
@@ -133,6 +132,7 @@ form.login * {
 }
 
 #container {
+    padding-top: 80px;
     margin: 10px;
 }
 
@@ -141,7 +141,7 @@ form.login * {
     padding: 5px;
     border-radius: 2px;
     box-shadow: 0 1px 4px darkslategray;
-    background-color:#42A5F5;
+    background-color: #42A5F5;
     color: white;
     font-family: fuenteParrafo;
     font-weight: bold;
