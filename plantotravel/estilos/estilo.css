@@ -33,6 +33,7 @@ a {
     background-color: skyblue;
     /*#3b7aa8;*/
     font-family: fuenteParrafo;
+    box-shadow: 0 1px 4px darkslategray;
 }
 
 .menu ul {
@@ -103,6 +104,10 @@ form.login * {
     overflow: auto;
 }
 
+.bloqueSidebar * {
+    display: inherit;
+}
+
 #main {
     width: 80%;
     float: left;
@@ -126,8 +131,9 @@ form.login * {
 
 .btn {
     margin: 5px;
+    padding: 5px;
     border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    box-shadow: 0 1px 4px darkslategray;
     background-color: lightseagreen;
     color: white;
     font-family: fuenteParrafo;

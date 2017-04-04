@@ -60,21 +60,13 @@
 .botonCompra {
     font-weight: bold;
     text-align: center;
-    padding: 10px;
-    background-color: skyblue;
-    border: 1px solid white;
-    border-radius: 5px;
 }
 
 .elegir {
     font-weight: bold;
     text-align: center;
-    width: 7%;
+    width: 10%;
     float: right;
-}
-
-.botonCompra:hover {
-    background-color: lightseagreen;
 }
 
 .excursionPopular {
