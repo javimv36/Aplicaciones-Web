@@ -22,70 +22,8 @@ h6 {
     font-family: fuenteTitulo;
 }
 
-p,
-ul li,
-a {
+p {
     font-family: fuenteParrafo;
-}
-
-.menu {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #2196F3;
-    font-family: fuenteParrafo;
-    box-shadow: 0 1px 4px darkslategray;
-}
-
-.menu ul {
-    list-style-type: none;
-    float: left;
-}
-
-.menu ul li {
-    float: left;
-}
-
-.menu ul li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.menu ul li a:hover {
-    background-color: dodgerblue;
-}
-
-a.tituloMenu {
-    text-decoration: none;
-    float: left;
-    font-family: fuenteTitulo;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-.login {
-    float: right;
-    padding: 25px 20px;
-    color: white;
-    font-family: fuenteParrafo;
-    font-size: 15px;
-}
-
-form.login {
-    display: inline;
-}
-
-form.login * {
-    float: left;
 }
 
 .sidebar {

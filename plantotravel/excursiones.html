@@ -5,52 +5,62 @@
     <title>PlanToTravel</title>
     <link id="estiloComprartido" rel="stylesheet" type="text/css" href="estilos/estilo.css" />
     <link id="estiloExcursiones" rel="stylesheet" type="text/css" href="estilos/excursiones.css" />
+    <link id="cabecera" rel="stylesheet" type="text/css" href="estilos/cabecera.css" />
     <meta charset="utf-8">
 </head>
 
 <body>
-    <div class="menu">
-        <a class="tituloMenu" href="index.html">PlanToTravel</a>
-        <ul>
-            <li>
-                <div class="dropdown">
-                    <a href="vuelos.html">Vuelos</a>
-                    <div class="dropdown-content">
-                        <p onclick="window.location='excursiones.html';">Nuevo vuelo</p>
-                        <p onclick="window.location='excursiones.html';">Buscador de vuelos</p>
-                    </div>
-                </div>
-            </li>
+    <div id="cabecera">
+        <div id="bloqueLogin">
+            <div id="login">
+                <form action="/index.html">
+                    <label> LOGIN </label>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <label>¿Aún no eres miembro?<a href="registrate.html">¡Regístrate!</a></label>
+                </form>
+            </div>
+        </div>
+        <div id="barraMenu">
+            <a class="tituloMenu" href="index.html">PlanToTravel </a>
+            <nav id="Nav">
+                <ul>
+                    <li class="blue">
+                        <a href="#">Vuelos</a>
+                        <ul>
+                            <li><a href="#">Crear vuelo</a></li>
+                            <li><a href="#">Lista de vuelos</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue">
+                        <a href="excursiones.html">Excursiones</a>
+                        <ul>
+                            <li><a href="#">Crear excursión</a></li>
+                            <li><a href="#">Lista de excursiones</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue">
+                        <a href="#">Contacto</a>
+                        <ul>
+                            <li><a href="contacto.html">Contacto general</a></li>
+                            <li><a href="acercade.html">Acerca de PlanToTravel</a></li>
+                            <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
 
-            <li>
-                <div class="dropdown">
-                    <a href="excursiones.html">Escursiones</a>
-                    <div class="dropdown-content">
-                        <p onclick="window.location='excursiones.html';">Nueva excursión</p>
-                        <p onclick="window.location='excursiones.html';">Buscador de excursiones</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <a href="contacto.html">Contacto</a>
-                    <div class="dropdown-content">
-                        <p onclick="window.location='excursiones.html';">Enlace desplegable</p>
-                    </div>
-                </div>
-            </li>
-            <li><a href="estadisticas.html">Estadísticas</a></li>
-            <li>
-                <div class="dropdown">
-                    <a href="perfil.html">Perfil</a>
-                    <div class="dropdown-content">
-                        <p onclick="window.location='excursiones.html';">Mensajes</p>
-                        <p onclick="window.location='excursiones.html';">Salir</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                    <li class="blue">
+                        <a href="#">Perfil</a>
+                        <ul>
+                            <li><a href="#">Configuración</a></li>
+                            <li><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    <!--cierra cabecera-->
     <div id="container">
         <div id="main">
             <div id="mainContainer">

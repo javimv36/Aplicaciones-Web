@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: fuenteTitulo;
+    src: url(../fonts/titulo.otf);
+}
+
+@font-face {
+    font-family: fuenteParrafo;
+    src: url(../fonts/parrafo.otf);
+}
+
+@font-face {
+    font-family: fuentePrin;
+    src: url(../fonts/theboldfont.ttf);
+}
+
+#contenedor {
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    margin: 0;
+}
+
+#bloqueContenido {
+    float: left;
+    width: 100%;
+}
+
+#contenido {
+    font-weight: bold;
+    font-family: fuenteParrafo;
+}
+
+.buscador {
+    font-family: fuentePrin;
+    color: white;
+    background-image: url(../images/ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.buscador form {
+    margin-bottom: 150px;
+}
+
+.buscador form section div input {
+    width: 200px;
+    height: 30px;
+    padding: 1px;
+}
+
+.buscador form button.buscar {
+    font-family: fuentePrin;
+    font-size: 22px;
+    color: white;
+    margin: 20px 100px;
+    float: right;
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    border-radius: 24px;
+    background-color: #3CB371;
+}
+
+.buscador form section div {
+    float: left;
+}
+
+.buscador form section div label {
+    display: block;
+}
+
+#bloqueInfo {
+    float: left;
+    font-family: fuentePrin;
+    margin: 25px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.info {
+    margin: 10px;
+}
+
+#bloqueSidebar {
+    float: left;
+    background-color: #F0FFFF;
+    font-family: fuentePrin;
+}
+
+#bloqueSidebar h2 {
+    text-align: center;
+}
+
+#sidebar {
+    margin: 25px 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.oferta {
+    margin: 10px;
+}
+
+.oferta img {
+    margin: 10px 10px;
+    width: 90%;
+}
+
+#footer {
+    background-color: #0D47A1;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-family: fuenteTitulo;
+}

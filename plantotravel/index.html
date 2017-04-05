@@ -1,78 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <title>PlanToTravel</title>
-    <link id="estilo" rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <title> PlanToTravel </title>
+    <link id="estilo" rel="stylesheet" type="text/css" href="estilos/index.css">
+    <link id="estilo" rel="stylesheet" type="text/css" href="estilos/cabecera.css">
     <meta charset="utf-8">
 </head>
 
 <body>
-    <div class="menu">
-        <a class="tituloMenu" href="index.html">PlanToTravel</a>
-        <ul>
-            <li><a href="vuelos.html">Vuelos</a></li>
-            <li><a href="excursiones.html">Excursiones</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="estadisticas.html">Estadísticas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="login">
-            <form action="/index.html">
-                Usuario <input type="text" name="user"> Contraseña <input type="password" name="pass">
-                <input type="submit" value="Log in">
-            </form>
+    <div id="contenedor">
+        <div id="cabecera">
+            <div id="bloqueLogin">
+                <div id="login">
+                    <form action="/index.html">
+                        <label> LOGIN </label>
+                        <input type="text" name="user" placeholder="Username">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <label>¿Aún no eres miembro?<a href="registrate.html">¡Regístrate!</a></label>
+                    </form>
+                </div>
+            </div>
+            <div id="barraMenu">
+                <a class="tituloMenu" href="index.html">PlanToTravel </a>
+                <nav id="Nav">
+                    <ul>
+                        <li class="blue">
+                            <a href="#">Vuelos</a>
+                            <ul>
+                                <li><a href="#">Crear vuelo</a></li>
+                                <li><a href="#">Lista de vuelos</a></li>
+                            </ul>
+                        </li>
+                        <li class="blue">
+                            <a href="excursiones.html">Excursiones</a>
+                            <ul>
+                                <li><a href="#">Crear excursión</a></li>
+                                <li><a href="#">Lista de excursiones</a></li>
+                            </ul>
+                        </li>
+                        <li class="blue">
+                            <a href="#">Contacto</a>
+                            <ul>
+                                <li><a href="contacto.html">Contacto general</a></li>
+                                <li><a href="acercade.html">Acerca de PlanToTravel</a></li>
+                                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="blue">
+                            <a href="#">Perfil</a>
+                            <ul>
+                                <li><a href="#">Configuración</a></li>
+                                <li><a href="#">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-    <div id="container">
+        <!--cierra cabecera-->
         <div id="main">
-            <div id="mainContainer">
-                <h1> Main div </h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus
-                    elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis,
-                    a scelerisque sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus
-                    elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis,
-                    a scelerisque sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus
-                    elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis,
-                    a scelerisque sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-
-
-
+            <div id="bloqueContenido">
+                <div id="contenido">
+                    <div class="buscador">
+                        <h1>¿Dónde quieres ir?</h1>
+                        <form>
+                            <section>
+                                <div>
+                                    <label for="origen">Desde</label>
+                                    <input type="text" name="origen">
+                                </div>
+                                <div>
+                                    <label for="origen">A</label>
+                                    <input type="text" name="destino">
+                                </div>
+                                <div>
+                                    <label for="salida">Salida</label>
+                                    <input type="date" name="salida">
+                                </div>
+                                <div>
+                                    <label for="regreso">Regreso</label>
+                                    <input type="date" name="regreso">
+                                </div>
+                            </section>
+                            <button class="buscar" type="buscar"> Buscar </button>
+                        </form>
+                        <h1>¿Dónde buscas tu excursión?</h1>
+                        <form>
+                            <section>
+                                <div>
+                                    <label for="lugar">Lugar</label>
+                                    <input type="text" name="lugar">
+                                </div>
+                                <div>
+                                    <label for="fecha">Fecha</label>
+                                    <input type="date" name="Fecha">
+                                </div>
+                            </section>
+                            <button class="buscar" type="buscar"> Buscar </button>
+                        </form>
+                    </div>
+                </div>
+                <!--cierra contenido-->
             </div>
+            <!--cierra bloqueContenido-->
+
+            <div id="bloqueInfo">
+                <div class="info">
+                    <h2>¿Qué es PlanToTravel?</h2>
+                    <p>PlanToTravel es una aplicación que proporciona la posibilidad de viajar generando tu propio itinerario. Como novedad se incluye que tu mismo puedes realizar el itinerario que desees realizar de forma práctica y sencilla.</p>
+                </div>
+                <div class="info">
+                    <h2>¿Cómo funciona?</h2>
+                    <p> Se ofertan vuelos de un número determinado de personas. Cuando dicho vuelo se complete, los usuarios serán informados que su vuelo está listo. Después, se mostrará una lista de excursiones disponibles en el destino. De este modo, pueden
+                        llevar un itinerario de su viaje ya definido.</p>
+                </div>
+                <div class="info">
+                    <h2>¡Hazte miembro!</h2>
+                    <p> ¡<a href="#">Regístrate</a> de forma gratuita y únete a nuestra comunidad! Al hacerte miembro, disfrutarás de ofertas especiales y tendrás un perfil donde poder guardar tus viajes, crear nuevos, valorar las excursiones... ¡y un sinfín
+                        de cosas más! </p>
+                </div>
+            </div>
+            <!--cierra bloqueInfo-->
+
+            <div id="bloqueSidebar">
+                <h2> NUESTROS DESTINOS MÁS SOLICITADOS </h2>
+                <div id="sidebar">
+                    <div class="oferta">
+                        <h3> BARCELONA </h3>
+                        <img src="images/barcelona.jpg">
+                    </div>
+                    <div class="oferta">
+                        <h3> PARIS </h3>
+                        <img src="images/paris.jpg">
+                    </div>
+                    <div class="oferta">
+                        <h3> ROMA </h3>
+                        <img src="images/roma.jpg">
+                    </div>
+                </div>
+                <!--cierra sidebar-->
+            </div>
+            <!--cierra bloqueSidebar-->
         </div>
+        <!--ciera main-->
 
-        <div id="sidebar-right" class="sidebar">
-            <div class="sidebarContainer">
-                <h1> Sidebar div </h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus
-                    elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis,
-                    a scelerisque sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus
-                    elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis,
-                    a scelerisque sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-
-            </div>
+        <div id="footer">
+            <label> <a href="politicadeprivacidad.html"> Política de privacidad </a>- </label>
+            <label> Licencias </label>
         </div>
     </div>
 
-    <div id="footer">
-        <h1> Footer div </h1>
-
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit
-            lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis, a scelerisque
-            sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit
-            lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis, a scelerisque
-            sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit
-            lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis, a scelerisque
-            sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-
-    </div>
 </body>
 
 </html>
