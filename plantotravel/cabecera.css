@@ -1,6 +1,6 @@
 @font-face {
     font-family: fuentePrin;
-    src: url(/fonts/theboldfont.ttf);
+    src: url(fonts/theboldfont.ttf);
 }
 
 #cabecera {
@@ -205,4 +205,18 @@ a.tituloMenu {
     width: 100%;
     background-color: #2196F3;
     box-shadow: 0 1px 4px darkslategray;
+}
+
+#footer {
+    background-color: #90caf9;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-family: fuenteTitulo;
+    color: white;
+}
+
+#footer a:visited {
+    color: blue;
 }

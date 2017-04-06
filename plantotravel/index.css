@@ -4,17 +4,17 @@ body {
 
 @font-face {
     font-family: fuenteTitulo;
-    src: url(../fonts/titulo.otf);
+    src: url(fonts/titulo.otf);
 }
 
 @font-face {
     font-family: fuenteParrafo;
-    src: url(../fonts/parrafo.otf);
+    src: url(fonts/parrafo.otf);
 }
 
 @font-face {
     font-family: fuentePrin;
-    src: url(../fonts/theboldfont.ttf);
+    src: url(fonts/theboldfont.ttf);
 }
 
 #contenedor {
@@ -39,7 +39,7 @@ body {
 .buscador {
     font-family: fuentePrin;
     color: white;
-    background-image: url(../images/ocean.jpg);
+    background-image: url(img/ocean.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: 10px;

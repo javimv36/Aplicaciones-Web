@@ -3,87 +3,131 @@
 
 <head>
     <title>PlanToTravel</title>
-    <link id="estiloComprartido" rel="stylesheet" type="text/css" href="estilos/estilo.css" />
-    <link id="estiloComprartido" rel="stylesheet" type="text/css" href="estilos/form.css" />
-    <link id="estiloExcursion" rel="stylesheet" type="text/css" href="estilos/crear-excursion.css" />
+    <link id="estiloComprartido" rel="stylesheet" type="text/css" href="distribucion.css" />
+    <link id="estiloExcursion" rel="stylesheet" type="text/css" href="crear-excursion.css" />
+    <link id="cabecera" rel="stylesheet" type="text/css" href="cabecera.css" />
+
     <meta charset="utf-8">
 </head>
 
 <body>
-    <div class="menu">
-        <a class="tituloMenu" href="index.html">PlanToTravel</a>
-        <ul>
-            <li><a href="vuelos.html">Vuelos</a></li>
-            <li><a href="excursiones.html">Excursiones</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="estadisticas.html">Estadísticas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <div id="cabecera">
+        <div id="bloqueLogin">
+            <div id="login">
+                <form action="/index.html">
+                    <label> LOGIN </label>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <label>¿Aún no eres miembro?<a href="registrate.html">¡Regístrate!</a></label>
+                </form>
+            </div>
+        </div>
+        <div id="barraMenu">
+            <a class="tituloMenu" href="index.html">PlanToTravel </a>
+            <nav id="Nav">
+                <ul>
+                    <li class="blue">
+                        <a href="#">Vuelos</a>
+                        <ul>
+                            <li><a href="#">Crear vuelo</a></li>
+                            <li><a href="#">Lista de vuelos</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue">
+                        <a href="excursiones.html">Excursiones</a>
+                        <ul>
+                            <li><a href="crear-excursion.html">Crear excursión</a></li>
+                            <li><a href="todas-excursiones.html">Lista de excursiones</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue">
+                        <a href="#">Contacto</a>
+                        <ul>
+                            <li><a href="contacto.html">Contacto general</a></li>
+                            <li><a href="acercade.html">Acerca de PlanToTravel</a></li>
+                            <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="blue">
+                        <a href="#">Perfil</a>
+                        <ul>
+                            <li><a href="#">Configuración</a></li>
+                            <li><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    <!--cierra cabecera-->
     <div id="container">
         <div id="main">
             <div id="mainContainer">
-                <h1>Modificar excursión</h1>
-                <h2>Nombre de la excursión</h2>
-                <div class="form">
-                    <form>
-                        <div class="fileUpload btn">
-                            <input type="file" class="upload" />
-                        </div>
-
-                        <div class="group">
-                            <textarea name="Text1" rows="10">Esta excursion se desarrolla en Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis</textarea>
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label>Descripción</label>
-                        </div>
-                        <div id="botom">
-                            <div id="izda">
-                                <div class="group">
-                                    <input type="date" required>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Desde</label>
-                                </div>
-
-                                <div class="group">
-                                    <input type="date" required>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Hasta</label>
-                                </div>
-
+                <div class="excursion">
+                    <h1>Modificar excursión</h1>
+                    <h2>Nombre de la excursión</h2>
+                    <div class="form">
+                        <form>
+                            <div class="fileUpload btn">
+                                <input type="file" class="upload" />
                             </div>
-                            <div id="dcha">
-                                <div>
+
+                            <div class="group">
+                                <textarea name="Text1" rows="10">Esta excursion se desarrolla en Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis</textarea>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Descripción</label>
+                            </div>
+                            <div id="botom">
+                                <div id="izda">
                                     <div class="group">
-                                        <input type="number" required>
+                                        <input type="date" required>
                                         <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Precio</label>
+                                        <span class="bar"></span> <br>
+                                        <label>Desde</label>
                                     </div>
 
                                     <div class="group">
-                                        <input type="number" required>
+                                        <input type="date" required>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
-                                        <label>Plazas</label>
+                                        <label>Hasta</label>
                                     </div>
+
                                 </div>
-                                <div class="group">
-                                    <select id="turno" name="turno">
+                                <div id="dcha">
+                                    <div>
+                                        <div class="group">
+                                            <input type="number" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Precio</label>
+                                        </div>
+
+                                        <div class="group">
+                                            <input type="number" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Plazas</label>
+                                        </div>
+                                    </div>
+                                    <div class="group">
+                                        <select id="turno" name="turno">
                                         <option value="" selected="selected">Elige un turno...</option>
                                         <option value="manana">Mañana</option>
                                         <option value="tarde">Tarde</option>
                                         <option value="completo">Turno completo</option>
                                         <option value="medio">Medio turno</option>
                                         </select>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <input class="btn" type="submit" value="Actualizar">
-                        <input class="btn" type="submit" value="Eliminar">
-                    </form>
+                            <input class="btn" type="submit" value="Actualizar">
+                            <input class="btn" type="submit" value="Eliminar">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,12 +136,12 @@
             <div class="sidebarContainer">
                 <div class="bloqueSidebar">
                     <h1> Menu agencia </h1>
-                    <a class="btn" href="#">Crear excursión</a>
+                    <a class="btn" href="crear-excursion.html">Crear excursión</a>
                     <a class="btn" href="#">Modificar excursión</a>
-                    <a class="btn" href="#">Lista de excursiones</a>
-                    <a class="btn" href="#">Crear vuelo</a>
+                    <a class="btn" href="todas-excursiones.html">Lista de excursiones</a>
+                    <a class="btn" href="crear-vuelo.html">Crear vuelo</a>
                     <a class="btn" href="#">Modificar vuelo</a>
-                    <a class="btn" href="#">Lista de vuelos</a>
+                    <a class="btn" href="todos-vuelos.html">Lista de vuelos</a>
                 </div>
                 <div class="bloqueSidebar">
                     <h1> Consejos </h1>
@@ -109,11 +153,8 @@
     </div>
 
     <div id="footer">
-        <h1> PlanToTravel </h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit
-            lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis, a scelerisque
-            sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
-
+        <label> <a href="politicadeprivacidad.html"> Política de privacidad </a>- </label>
+        <label> Licencias </label>
     </div>
 </body>
 

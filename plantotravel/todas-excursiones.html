@@ -3,96 +3,126 @@
 
 <head>
     <title>PlanToTravel</title>
-    <link id="estiloComprartido" rel="stylesheet" type="text/css" href="estilos/estilo.css" />
-    <link id="estiloExcursiones" rel="stylesheet" type="text/css" href="estilos/excursiones.css" />
+    <link id="estiloComprartido" rel="stylesheet" type="text/css" href="distribucion.css" />
+    <link id="estiloExcursiones" rel="stylesheet" type="text/css" href="excursiones.css" />
+    <link id="cabecera" rel="stylesheet" type="text/css" href="cabecera.css" />
     <meta charset="utf-8">
 </head>
 
 <body>
-    <div class="menu">
-        <a class="tituloMenu" href="index.html">PlanToTravel</a>
-        <ul>
-            <li><a href="vuelos.html">Vuelos</a></li>
-            <li><a href="excursiones.html">Excursiones</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="estadisticas.html">Estadísticas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <div id="cabecera">
+        <div id="bloqueLogin">
+            <div id="login">
+                <form action="/index.html">
+                    <label> LOGIN </label>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <label>¿Aún no eres miembro?<a href="registrate.html">¡Regístrate!</a></label>
+                </form>
+            </div>
+        </div>
+        <div id="barraMenu">
+            <a class="tituloMenu" href="index.html">PlanToTravel </a>
+            <nav id="Nav">
+                <ul>
+                    <li class="blue">
+                        <a href="#">Vuelos</a>
+                        <ul>
+                            <li><a href="crear-excursion.html">Crear vuelo</a></li>
+                            <li><a href="todas-excursiones.html">Lista de vuelos</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue">
+                        <a href="excursiones.html">Excursiones</a>
+                        <ul>
+                            <li><a href="#">Crear excursión</a></li>
+                            <li><a href="#">Lista de excursiones</a></li>
+                        </ul>
+                    </li>
+                    <li class="blue">
+                        <a href="#">Contacto</a>
+                        <ul>
+                            <li><a href="contacto.html">Contacto general</a></li>
+                            <li><a href="acercade.html">Acerca de PlanToTravel</a></li>
+                            <li><a href="faq.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="blue">
+                        <a href="#">Perfil</a>
+                        <ul>
+                            <li><a href="#">Configuración</a></li>
+                            <li><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    <!--cierra cabecera-->
     <div id="container">
         <div id="main">
             <div id="mainContainer">
                 <div id="excursiones">
                     <div class="excursion">
-                        <img src="images/excursion1.jpg" alt="">
+                        <img src="img/excursion1.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Visita al museo de arte contemporáneo</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Tarde</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>50€</h2>
+                        <h4>30 plazas</h4>
                         <div class="btn elegir">
-                            <p> Modificar </p>
-                        </div>
-                        <div class="btn elegir">
-                            <p> Eliminar </p>
+                            <p> Elegir </p>
                         </div>
                     </div>
                     <div class="excursion">
-                        <img src="images/excursion2.jpg" alt="">
+                        <img src="img/excursion2.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Viaje a la cala del Ángel</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Mañana</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>10€</h2>
+                        <h4>20 plazas</h4>
                         <div class="btn elegir">
-                            <p> Modificar </p>
-                        </div>
-                        <div class="btn elegir">
-                            <p> Eliminar </p>
+                            <p> Elegir </p>
                         </div>
                     </div>
                     <div class="excursion">
-                        <img src="images/excursion3.jpg" alt="">
+                        <img src="img/excursion3.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Paseo en barco por la desembocadura del Calenhir</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Mañana</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>30€</h2>
+                        <h4>25 plazas</h4>
                         <div class="btn elegir">
-                            <p> Modificar </p>
-                        </div>
-                        <div class="btn elegir">
-                            <p> Eliminar </p>
+                            <p> Elegir </p>
                         </div>
                     </div>
                     <div class="excursion">
-                        <img src="images/excursion4.jpg" alt="">
+                        <img src="img/excursion4.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
-                            <h3>Nombre de la excursión</h3>
+                            <h3>Viaje a las ruinas de Erebor</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
                                 diam maximus, porta cursus elit lobortis. </p>
-                            <h3>Mañana/Tarde</h3>
+                            <h3>Turno completo</h3>
                         </div>
-                        <h2>000€</h2>
-                        <h4>00 plazas</h4>
+                        <h2>60€</h2>
+                        <h4>20 plazas</h4>
                         <div class="btn elegir">
-                            <p> Modificar </p>
-                        </div>
-                        <div class="btn elegir">
-                            <p> Eliminar </p>
+                            <p> Elegir </p>
                         </div>
                     </div>
                     <div class="excursion">
-                        <img src="images/excursion5.jpg" alt="">
+                        <img src="img/excursion5.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
                             <h3>Nombre de la excursión</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
@@ -102,14 +132,11 @@
                         <h2>000€</h2>
                         <h4>00 plazas</h4>
                         <div class="btn elegir">
-                            <p> Modificar </p>
-                        </div>
-                        <div class="btn elegir">
-                            <p> Eliminar </p>
+                            <p> Elegir </p>
                         </div>
                     </div>
                     <div class="excursion">
-                        <img src="images/excursion6.jpg" alt="">
+                        <img src="img/excursion6.jpg" alt="">
                         <div class="datosExcursion" onclick="window.location='excursion.html';">
                             <h3>Nombre de la excursión</h3>
                             <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra
@@ -119,65 +146,26 @@
                         <h2>000€</h2>
                         <h4>00 plazas</h4>
                         <div class="btn elegir">
-                            <p> Modificar </p>
-                        </div>
-                        <div class="btn elegir">
-                            <p> Eliminar </p>
+                            <p> Elegir </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="sidebar">
+        <div id="sidebar-right" class="sidebar">
             <div class="sidebarContainer">
                 <div class="bloqueSidebar">
-                    <h1> Menu agencia </h1>
-                    <a class="btn" href="#">Crear excursión</a>
-                    <a class="btn" href="#">Modificar excursión</a>
-                    <a class="btn" href="#">Lista de excursiones</a>
-                    <a class="btn" href="#">Crear vuelo</a>
-                    <a class="btn" href="#">Modificar vuelo</a>
-                    <a class="btn" href="#">Lista de vuelos</a>
+                    <h1> Otro bloque </h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta
+                        cursus elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at
+                        augue facilisis </p>
                 </div>
                 <div class="bloqueSidebar">
-                    <h3> Populares </h3>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
-                    <div class="excursionPopular">
-                        <p>Nombre excursión</p>
-                    </div>
+                    <h1> Otro bloque </h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta
+                        cursus elit lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at
+                        augue facilisis </p>
                 </div>
             </div>
         </div>
@@ -188,7 +176,69 @@
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ante facilisis, rutrum arcu sit amet, ultrices justo. Mauris aliquet ligula erat, sollicitudin auctor massa dictum id. Mauris interdum ex pharetra diam maximus, porta cursus elit
             lobortis. Mauris massa mi, mattis vitae viverra a, luctus fringilla nisi. Nam in lectus ut arcu posuere sodales quis non est. Mauris dapibus massa justo, sit amet lobortis dolor interdum sed. Nullam auctor lectus at augue facilisis, a scelerisque
             sapien efficitur. Fusce scelerisque semper tortor, eget accumsan risus euismod sed. Fusce at enim ac urna sodales fringilla vel eleifend nibh.</p>
+
     </div>
+</body>
+
+</html>
+<div class="sidebar">
+    <div class="sidebarContainer">
+        <div class="bloqueSidebar">
+            <h1> Menu agencia </h1>
+            <a class="btn" href="#">Crear excursión</a>
+            <a class="btn" href="#">Modificar excursión</a>
+            <a class="btn" href="#">Lista de excursiones</a>
+            <a class="btn" href="#">Crear vuelo</a>
+            <a class="btn" href="#">Modificar vuelo</a>
+            <a class="btn" href="#">Lista de vuelos</a>
+        </div>
+        <div class="bloqueSidebar">
+            <h3> Populares </h3>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+            <div class="excursionPopular">
+                <p>Nombre excursión</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <label> <a href="politicadeprivacidad.html"> Política de privacidad </a>- </label>
+    <label> Licencias </label>
+</div>
 </body>
 
 </html>

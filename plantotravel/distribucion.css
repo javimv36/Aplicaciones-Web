@@ -1,11 +1,11 @@
 @font-face {
     font-family: fuenteTitulo;
-    src: url(../fonts/titulo.otf);
+    src: url(fonts/titulo.otf);
 }
 
 @font-face {
     font-family: fuenteParrafo;
-    src: url(../fonts/parrafo.otf);
+    src: url(fonts/parrafo.otf);
 }
 
 body {
@@ -60,18 +60,6 @@ p {
 #mainContainer {
     margin-left: 50px;
     padding: 10px;
-}
-
-#footer {
-    color: white;
-    clear: both;
-    padding: 20px;
-    background-color: #0D47A1;
-    text-align: center;
-}
-
-#container {
-    margin: 10px;
 }
 
 .btn {
