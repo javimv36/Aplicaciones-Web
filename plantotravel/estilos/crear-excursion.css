@@ -7,7 +7,21 @@
     float: left;
 }
 
-#main {
+.excursion {
     box-shadow: 0 1px 4px darkslategray;
     background-color: white;
+    width: 100%;
+    float: left;
+}
+
+.form input,
+.form textarea {
+    margin: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #1E88E5;
+}
+
+label {
+    font-family: fuenteParrafo;
 }

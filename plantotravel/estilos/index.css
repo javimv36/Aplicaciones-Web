@@ -120,10 +120,16 @@ body {
 }
 
 #footer {
-    background-color: #0D47A1;
+    background-color: #90caf9;
     clear: both;
     padding: 10px;
     text-align: center;
     position: relative;
     font-family: fuenteTitulo;
+    color: white;
+}
+
+#main a:visited,
+#footer a:visited {
+    color: blue;
 }

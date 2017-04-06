@@ -2,9 +2,12 @@
     float: left;
 }
 
-#main {
+.excursion {
     box-shadow: 0 1px 4px darkslategray;
     background-color: white;
+    border-radius: 5px;
+    float: left;
+    padding: 5px;
 }
 
 .excursion #centro #imagen {
@@ -25,23 +28,25 @@
 #dcha * {
     margin: 5px;
     padding: 5px;
-    background-color: #64B5F6;
+    background-color: #90caf9;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0 1px 4px darkslategray;
 }
 
 #comentarios {
-    width: 90%;
+    width: 100%;
     float: left;
     border-radius: 5px;
 }
 
 .comentario {
+    box-shadow: 0 1px 4px darkslategray;
+    background-color: white;
     width: 100%;
     float: left;
     padding: 5px;
     margin: 5px;
-    border: 1px solid #BBDEFB;
     border-radius: 5px;
 }
 
