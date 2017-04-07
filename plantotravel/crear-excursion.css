@@ -14,15 +14,15 @@
     float: left;
 }
 
-.form input,
-.form textarea {
+.formulario form input,
+.formulario form textarea {
     margin: 10px;
     width: 90%;
     border: none;
     border-bottom: 1px solid #1E88E5;
 }
 
-label {
+.formulario label {
     padding-left: 5px;
     font-family: fuenteParrafo;
 }
