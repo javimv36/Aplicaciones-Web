@@ -1,4 +1,12 @@
-.excursion #centro * {
+#descripcion ul li {
+    display: block;
+    font-family: fuenteParrafo;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.excursion #centro img,
+.excursion #centro #descripcion {
     float: left;
 }
 

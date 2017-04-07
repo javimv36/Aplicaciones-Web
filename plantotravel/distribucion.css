@@ -28,7 +28,7 @@ p {
 
 .sidebar {
     min-width: 300px;
-    width: 20%;
+    width: 10%;
     float: left;
 }
 
@@ -49,16 +49,21 @@ p {
     text-decoration: none;
 }
 
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 #main {
     min-width: 300px;
-    width: 80%;
+    width: 70%;
     float: left;
     /*background-color: white;
     border-radius: 5px;*/
 }
 
 #mainContainer {
-    margin-left: 50px;
     padding: 10px;
 }
 
