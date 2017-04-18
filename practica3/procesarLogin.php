@@ -1,4 +1,4 @@
-  <?php 
+  <?php
   session_start();
   ?>
 <!doctype html>
@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <?php 
+    <?php
 $name = $password = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($name == "user"){
       if($password == "userpass"){
-      
+
         $_SESSION["nombre"] = "Juan";
         $_SESSION["login"] = true;
       }
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($name == "admin"){
       if($password == "adminpass"){
-        $_SESSION["nombre"] = "Juan";
+        $_SESSION["nombre"] = "Admin";
         $_SESSION["login"] = true;
         $_SESSION["esAdmin"] = true;
       }
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div id="cabecera">
       <?php include("cabecera.php"); ?>
       </div>
-      
+
       <div id="sidebar-left">
         <?php include("sidebarIzq.php"); ?>
       </div>
