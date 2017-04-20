@@ -36,14 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 ?>
     <div id="contenedor">
-      <div id="cabecera">
-      <?php include("cabecera.php"); ?>
-      </div>
-
-      <div id="sidebar-left">
-        <?php include("sidebarIzq.php"); ?>
-      </div>
-
+      <?php 
+		include("cabecera.php");
+		include("sidebarIzq.php"); 
+	?>
       <div id="contenido">
 
         <?php echo '<h2> Bienvenido ' . $_SESSION["nombre"] . '</h2>';
@@ -52,13 +48,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </div>
 
-      <div id="sidebar-right">
-        <?php include("sidebarDer.php"); ?>
-      </div>
-
-      <div id="pie">
-         <?php include("pie.php"); ?>
-      </div>
+      <?php 
+		include("sidebarDer.php");
+		include("pie.php"); 
+	?>
     </div>
 
   </body>

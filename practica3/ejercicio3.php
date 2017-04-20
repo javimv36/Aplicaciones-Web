@@ -11,26 +11,22 @@
 
   <body>
     <div id="contenedor">
-      <div id="cabecera">
-      <?php include("cabecera.php"); ?>
-      </div>
-      
-      <div id="sidebar-left">
-        <?php include("sidebarIzq.php"); ?>
-      </div>
+    
+	<?php 
+		include("cabecera.php");
+		include("sidebarIzq.php"); 
+	?>
 
-      <div id="contenido">
-        <h1>Página principal</h1>
-    <p> Aquí está el contenido público, visible para todos los usuarios. </p>
-      </div>
+	<div id="contenido">
+        	<h1>Página principal</h1>
+    		<p> Aquí está el contenido público, visible para todos los usuarios. </p>
+	</div>
 
-      <div id="sidebar-right">
-        <?php include("sidebarDer.php"); ?>
-      </div>
+        <?php 
+		include("sidebarDer.php");
+		include("pie.php"); 
+	?>
 
-      <div id="pie">
-         <?php include("pie.php"); ?>
-      </div>
     </div>
 
   </body>

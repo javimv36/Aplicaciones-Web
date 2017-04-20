@@ -11,14 +11,10 @@
 
   <body>
     <div id="contenedor">
-      <div id="cabecera">
-      <?php include("cabecera.php"); ?>
-      </div>
-      
-      <div id="sidebar-left">
-        <?php include("sidebarIzq.php"); ?>
-      </div>
-
+      <?php 
+		include("cabecera.php");
+		include("sidebarIzq.php"); 
+	?>
       <div id="contenido">
 
 		<h1>Acceso al sistema</h1>
@@ -32,13 +28,10 @@
 		</fieldset>
 
 	</div>
-      <div id="sidebar-right">
-        <?php include("sidebarDer.php"); ?>
-      </div>
-
-      <div id="pie">
-         <?php include("pie.php"); ?>
-      </div>
+      <?php 
+		include("sidebarDer.php");
+		include("pie.php"); 
+	?>
     </div>
 
   </body>

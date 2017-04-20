@@ -1,4 +1,5 @@
-<h1>Mi gran página web</h1>
+<div id="cabecera">	
+	<h1>Mi gran página web</h1>
 		<div class="saludo">
 	
 	<?php 
@@ -11,3 +12,4 @@
 	?>
 
 	</div>
+</div>
