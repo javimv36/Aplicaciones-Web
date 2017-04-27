@@ -1,11 +1,25 @@
 @font-face {
+    font-family: fuenteTitulo;
+    src: url(fonts/titulo.otf);
+}
+
+@font-face {
+    font-family: fuenteParrafo;
+    src: url(fonts/parrafo.otf);
+}
+
+@font-face {
     font-family: fuentePrin;
     src: url(fonts/theboldfont.ttf);
 }
 
+body {
+    margin: 0;
+}
+
 #cabecera {
     background-color: #2196F3;
-    float: left;
+    float:left;
 }
 
 #bloqueLogin {
@@ -93,7 +107,7 @@ a.tituloMenu {
 #Nav>ul>li>a:hover {
     background-color: white;
     border-radius: 5px;
-    color: #1e88e5;
+    color: #1e88e5  ;
 }
 
 #Nav>ul>li>a {
@@ -217,6 +231,11 @@ a.tituloMenu {
     color: white;
 }
 
-#footer a:visited {
-    color: blue;
+#footer label {
+    text-shadow: 0px 0px 2px black;
+    padding: 0px 5px;
+}
+
+#footer a {
+    color: white;
 }
