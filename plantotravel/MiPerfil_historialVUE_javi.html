@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Mi perfil</title>
+<link rel="stylesheet" href="mi_perfil3_javi.css" type="text/css">
+<link id="estiloCabecera" rel="stylesheet" href="cabecera.css" type="text/css">
+<meta charset="utf-8">
+
+</head>
+<body>
+  <div id="cabecera">
+      <div id="bloqueLogin">
+          <div id="login">
+              <form action="index.html">
+                  <label> LOGIN </label>
+                  <input type="text" name="user" placeholder="Username">
+                  <input type="password" name="pass" placeholder="Password">
+                  <input type="submit" value="Login">
+                  <label>¿Aún no eres miembro?<a href="registrate.html">¡Regístrate!</a></label>
+              </form>
+          </div>
+      </div>
+      <div id="barraMenu">
+          <a class="tituloMenu" href="index.html">PlanToTravel </a>
+          <nav id="Nav">
+              <ul>
+                  <li class="blue">
+                      <a href="#">Vuelos</a>
+                      <ul>
+                          <li><a href="crear-excursion.html">Crear vuelo</a></li>
+                          <li><a href="todas-excursiones.html">Lista de vuelos</a></li>
+                      </ul>
+                  </li>
+                  <li class="blue">
+                      <a href="excursiones.html">Excursiones</a>
+                      <ul>
+                          <li><a href="#">Crear excursión</a></li>
+                          <li><a href="#">Lista de excursiones</a></li>
+                      </ul>
+                  </li>
+                  <li class="blue">
+                      <a href="#">Contacto</a>
+                      <ul>
+                          <li><a href="contacto.html">Contacto general</a></li>
+                          <li><a href="acercade.html">Acerca de PlanToTravel</a></li>
+                          <li><a href="faq.html">Preguntas frecuentes</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="blue">
+                      <a href="MiPerfil_form_javi.html">Perfil</a>
+                      <ul>
+                          <li><a href="#">Cerrar sesión</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--_______________________________________________________________________________ -->
+<div class="container">
+
+  <div class="datos">
+
+        <div class="div-img" >
+            <img class="img" src="img/perfil2.png" title="Foto Perfil" alt="Mi perfil" width="400" height="400">
+        </div>
+      <div class="menu">
+        <ul class="menu-opciones">
+          <li><a href="MiPerfil_form_javi.html">Mis Datos</a></li>
+          <li><a href="MiPerfil_historialVUE_javi.html">Viajes</a></li>
+          <li><a href="MiPerfil_historial_javi.html">Excursiones</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="titulo">
+        <p>Mis Vuelos</p>
+
+      </div>
+      <div class="pendientes">
+        <div class="box">
+          <div class="titulo-vuelo">
+            <div class="nombre">
+              <p>Madrid - Londres</p>
+            </div>
+            <div class="estado">
+              <p>Pendiente</p>
+            </div>
+          </div>
+          <div class="detalle">
+
+            <div class="caract">
+
+              <div class="ida">
+                <div class="img">
+
+                    <img src="img/iberia.jpg" alt="iberia" width="60" height="30">
+
+                </div>
+                <div class="origen">
+                  <p>11:05</p>
+                  <p class="aclarar">MAD</p>
+                </div>
+                <div class="duracion">
+                  <p>2h 40min</p>
+                  <p><img class="b-fija" src="img/barra.png" alt=""> &#9992; </p>
+                  <!-- <span class="duracion">&#9473</span><span> &#9992</span>
+                  <hr class="b-dura"><span>&#9992</span> -->
+                  <p class="directo">Directo</p>
+                </div>
+                <div class="destino">
+                  <p>11:05</p>
+                  <p class="aclarar">LDN</p>
+                </div>
+
+              </div>
+              <div class="vuelta">
+
+                <div class="img">
+
+                    <img src="img/iberia.jpg" alt="iberia" width="60" height="30">
+
+                </div>
+                <div class="origen">
+                  <p>11:05</p>
+                  <p class="aclarar">LDN</p>
+                </div>
+                <div class="duracion">
+                  <p>2h 40min</p>
+                  <p><img class="b-fija" src="img/barra.png" alt=""> &#9992; </p>
+                  <!--<span class="duracion">&#9473</span><span> &#9992</span>
+                  <hr class="b-dura"><span>&#9992</span>-->
+                  <p class="directo">Directo</p>
+                </div>
+                <div class="destino">
+                  <p>11:05</p>
+                  <p class="aclarar">MAD</p>
+                </div>
+              </div>
+            </div>
+            <div class="precio">
+              <div class="total">
+                <p class="box-total">Total</p>
+                <p class="box-precio">360€</p>
+              </div>
+
+            </div>
+
+        </div>
+
+      </div>
+        <hr class="separador">
+      </div>
+
+
+      <div class="historial">
+
+        <div class="box">
+          <div class="titulo-vuelo">
+            <div class="nombre">
+              <p>Madrid - Estocolmo</p>
+            </div>
+            <div class="estado">
+              <p>Finalizado</p>
+            </div>
+          </div>
+          <div class="detalle">
+            <div class="caract">
+
+              <div class="ida">
+                <div class="img">
+
+                    <img src="img/norwegian.jpg" alt="norwegian" width="60" height="30">
+
+                </div>
+                <div class="origen">
+                  <p>15:45</p>
+                  <p class="aclarar">MAD</p>
+                </div>
+                <div class="duracion">
+                  <p>7h 50min</p>
+                  <p><img class="b-fija" src="img/escala.png" alt="">&#9992; </p>
+                  <!--<span class="duracion">&#9473</span><span> &#9992</span>
+                  <hr class="b-dura"><span>&#9992</span>-->
+                  <p class="escala">1 escala <span class="aclarar">LHR</span></p>
+                </div>
+                <div class="destino">
+                  <p>23:35</p>
+                  <p class="aclarar">ARN</p>
+                </div>
+
+              </div>
+              <div class="vuelta">
+
+                <div class="img">
+
+                    <img src="img/norwegian.jpg" alt="norwegian" width="60" height="30">
+
+                </div>
+                <div class="origen">
+                  <p>15:40</p>
+                  <p class="aclarar">ARN</p>
+                </div>
+                <div class="duracion">
+                  <p>8h 30min</p>
+                  <p><img class="b-fija" src="img/escala.png" alt="">&#9992; </p>
+                  <!--<span class="duracion">&#9473</span><span> &#9992</span>
+                  <hr class="b-dura"><span>&#9992</span>-->
+                  <p class="escala">1 escala <span class="aclarar">LON</span></p>
+                </div>
+                <div class="destino">
+                  <p>0:10 <sup>(+1)</sup></p>
+                  <p class="aclarar">MAD</p>
+                </div>
+              </div>
+            </div>
+            <div class="precio">
+              <div class="total">
+                <p class="box-total">Total</p>
+                <p class="box-precio">196€</p>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="titulo-vuelo">
+          <div class="nombre">
+            <p>Madrid - Barcelona</p>
+          </div>
+          <div class="estado">
+            <p>Finalizado</p>
+          </div>
+        </div>
+        <div class="detalle">
+          <div class="caract">
+
+            <div class="ida">
+              <div class="img">
+
+                  <img src="img/vueling.jpg" alt="vueling" width="60" height="30">
+
+              </div>
+              <div class="origen">
+                <p>7:00</p>
+                <p class="aclarar">MAD</p>
+              </div>
+              <div class="duracion">
+                <p>1h 20min</p>
+                <p><img class="b-fija" src="img/barra.png" alt="">&#9992; </p>
+                <!--<span class="duracion">&#9473</span><span> &#9992</span>
+                <hr class="b-dura"><span>&#9992</span>-->
+                <p class="directo">Directo</p>
+              </div>
+              <div class="destino">
+                <p>8:20</p>
+                <p class="aclarar">BCN</p>
+              </div>
+
+            </div>
+            <div class="vuelta">
+
+              <div class="img">
+
+                  <img src="img/vueling.jpg" alt="vueling" >
+
+              </div>
+              <div class="origen">
+                <p>16:15</p>
+                <p class="aclarar">BCN</p>
+              </div>
+              <div class="duracion">
+                <p>1h 25min</p>
+                <p><img class="b-fija" src="img/barra.png" alt=""> &#9992; </p>
+                <!--<span class="duracion">&#9473</span><span> &#9992</span>
+                <hr class="b-dura"><span>&#9992</span>-->
+                <p class="directo">Directo</p>
+              </div>
+              <div class="destino">
+                <p>17:40</p>
+                <p class="aclarar">MAD</p>
+              </div>
+            </div>
+          </div>
+          <div class="precio">
+            <div class="total">
+              <p class="box-total">Total</p>
+              <p class="box-precio">80€</p>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+
+      </div>
+
+
+
+  </div>
+</div>
+  <div id="footer">
+    <label> <a href="politicadeprivacidad.html"> Política de privacidad </a> </label>
+    <label> <a href="terminos.html"> Términos y condiciones del servicio </a> </label>
+  </div>
+
+</body>
+</html>

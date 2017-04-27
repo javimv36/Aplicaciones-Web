@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Modificar vuelo</title>
+    <link rel="stylesheet" href="back-office.css" type="text/css">
+    <link id="estiloCompartido" rel="stylesheet" type="distribucion.css"/>
+    <link id="estiloCompra" rel="stylesheet" type="confirmacion-compra.css"/>
+    <link id="estiloCabecera" rel="stylesheet" type="cabecera.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".vuelos").click(function(){
+            $(".vuelosjq").slideToggle();
+        });
+    });
+    $(document).ready(function(){
+        $(".excursion").click(function(){
+            $(".excursionjq").slideToggle();
+        });
+    });
+
+    </script>
+  </head>
+  <body>
+    <div class="cabecera">
+      <!--  <img class="logo"src="../images/admin.png" alt="admin">-->
+        <input class="logout" type=image src="img/logout.png">
+    </div>
+    <div class="container">
+      <menu class="sidebar-izq">
+          <ul class="menu">
+              <li><a class="" href="index_gestor.html">Inicio</a></li>
+
+              <li><a class="vuelos">Vuelos</a></li>
+              <div class=vuelosjq>
+              <li><a class="vuelos" href="mod_vuelo_gestor.html">Modificar</a></li>
+                <li><a class="vuelos" href="#">Mostrar</a></li>
+
+              </div>
+              <li><a class="excursion">Excursion</a></li>
+              <div class=excursionjq>
+                <li><a class="excursion" href="mod_excur_gestor.html">Modificar</a></li>
+              <li><a class="excursion" href="#">Mostrar</a></li>
+            </div>
+            </ul>
+
+      </menu>
+      <div class="contenido">
+        <h1 class="titulo">Modificar vuelo</h1>
+
+        <div class="form">
+          <form class="form-style" action="index.html" method="post"required>
+              <ul>
+              <li>
+                  <label for="nombre">Pais</label>
+                  <input type="text" name="pais" value=""required autofocus/>
+                </li>
+                <li>
+                  <label for="apellidos">Ciudad</label>
+                  <input type="text" name="ciudad" value=""required/>
+                </li>
+                <li>
+                  <label for="fecha">Fechas salida disponible</label>
+                  <input type="date" name="date_salida" required/>
+                </li>
+                <li>
+                  <label for="fecha">Fechas llegada disponible</label>
+                  <input type="date" name="date_llegada" required/>
+                </li>
+                <li>
+                  <label for="direccion">Precio</label>
+                  <input type="text" name="money" value=""required/>
+                </li>
+                <li>
+                  <label for="direccion">Plazas</label>
+                  <input type="text" name="plazas" value=""required/>
+                </li>
+                <li>
+                  <button class="add" type="submit">Añadir</button>
+                  </li>
+              </ul>
+            </div>
+<!--
+            <div class="table">
+              <div class="columna1">
+              <div class="box1">
+                <p>Barcelona</p>
+              </div>
+              <div class="box2">
+                  <p>Praga</p>
+              </div>
+              <div class="box3">
+                  <p>Estocolmo</p>
+              </div></div>
+
+              <div class="columna2">
+              <div class="box4">
+                  <p><button class="submit" type="submit">Guardar</button></p>
+              </div>
+              <div class="box5">
+                  <p><button class="submit" type="submit">Guardar</button></p>
+              </div>
+              <div class="box6">
+          <p><button class="submit" type="submit">Guardar</button></p>
+          </div></div>
+          <div class="columna3">
+              <div class="box7">
+          <p><button class="del" type="submit">Eliminar</button></p>
+              </div>
+              <div class="box8">
+          <p><button class="del" type="submit">Eliminar</button></p>
+              </div>
+              <div class="box9">
+            <button class="del" type="submit">Eliminar</button>  </div>
+          </div>
+          <div class="columna4">
+          <div class="box10">
+              <p><input class="check" type="checkbox"></p>
+          </div>
+          <div class="box11">
+              <p><input class="check" type="checkbox"></p>
+          </div>
+          <div class="box12">
+          <p><input class="check" type="checkbox"></p>
+          </div></div>
+
+              </div>
+        </div>-->
+
+        <div class="datagrid">
+          <table>
+            <thead>
+              <tr>
+                <th>Compañia</th>
+                <th>País Origen</th>
+                <th>Ciudad Origen</th>
+                <th>País Destino</th>
+                <th>Ciudad Destino</th>
+                <th>Fecha</th>
+                <th>Hora Salida</th>
+                <th>Hora Llegada</th>
+                <th>Escala</th>
+                <th>Precio</th>
+                <th>Plazas</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+          <tfoot>
+            <tr>
+              <td colspan="14">
+                <div id="paging">
+                  <ul>
+                    <li><a href="#"><span>Previous</span></a></li><li><a href="#" class="active"><span>1</span></a></li>
+                    <li><a href="#"><span>2</span></a></li>
+                    <li><a href="#"><span>3</span></a></li>
+                    <li><a href="#"><span>4</span></a></li>
+                    <li><a href="#"><span>5</span></a></li>
+                    <li><a href="#"><span>Next</span></a></li>
+                  </ul>
+                </div>
+              </tr>
+            </tfoot>
+
+          <tbody>
+            <tr>
+              <td>Iberia</td>
+              <td>España</td>
+              <td>Madrid</td>
+              <td>Reino Unido</td>
+              <td>Londres</td>
+              <td><input type="date" name="date_salida" required/></td>
+              <td>11:05</td>
+              <td>13:45</td>
+              <td>NO</td>
+              <td>360€</td>
+              <td>1</td>
+              <td><button class="submit" type="submit">Guardar</button></td>
+              <td><button class="del" type="submit">Eliminar</button></td>
+              <td><input class="check" type="radio" name="sel"></td>
+            </tr>
+            <tr class="alt">
+              <td>Norwegian</td>
+              <td>España</td>
+              <td>Madrid</td>
+              <td>Suecia</td>
+              <td>Estocolmo</td>
+              <td><input type="date" name="date_salida" required/></td>
+              <td>15:45</td>
+              <td>23:35</td>
+              <td>SI</td>
+              <td>196</td>
+              <td>1</td>
+              <td><button class="submit" type="submit">Guardar</button></td>
+              <td><button class="del" type="submit">Eliminar</button></td>
+              <td><input class="check" type="radio" name="sel"></td>
+            </tr>
+            <tr>
+              <td>Vueling</td>
+              <td>España</td>
+              <td>Madrid</td>
+              <td>España</td>
+              <td>Barcelona</td>
+              <td><input type="date" name="date_salida" required/></td>
+              <td>7:00</td>
+              <td>8:20</td>
+              <td>NO</td>
+              <td>80€</td>
+              <td>1</td>
+              <td><button class="submit" type="submit">Guardar</button></td>
+              <td><button class="del" type="submit">Eliminar</button></td>
+              <td><input class="check" type="radio" name="sel"></td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+      </body>
+</html>

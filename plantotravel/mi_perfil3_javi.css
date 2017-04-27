@@ -1,0 +1,397 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Lobster');*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+div{
+  /*border: 2px solid;*/
+}
+body{
+/*  background-image:  linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)), url(arena.jpg);/*difuminar fondo*/
+/*  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(arena.jpg); /*difuminar fondo*/
+/*  background-image:url(../images/arena.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /*todo esto es para hacer responsive el fondo y sea fijo*/
+  /*background-attachment: fixed;*/
+/*  background-color: #F7F7F7;*/
+
+/*font-family: 'Lobster', cursive;*/
+background-color: #E3F2FD;
+
+}
+
+.container{
+  margin: 0 auto; /**centar contenido*/
+  width: 900px;
+  height: 50%;
+  /*height: 100px;*/
+  top: 50%;
+  display: flex; /*necesario poner en caja padre*/
+  flex-direction: row;
+  align-items: flex-start;
+  /*border: 2px solid red;*/
+  /*background-color: #E5E5E5;*/
+
+}
+
+.datos{
+  width: 200px;
+  height: 450px;
+  margin: 10px;
+  padding: 2px;
+  background-color:rgba(192,192,192,0.4);
+  /*top: 0;
+  position: fixed;   /*esto es para mantener el menu fijo mas adelante*/
+
+
+
+}
+.contenido{
+  width: 648px;
+  margin: 10px;
+  padding: 10px;
+  overflow: auto; /**sale scroll por el lado que sea necesario*/
+  font-weight: 700;
+  background-color: rgba(192,192,192,0.4);
+/*  font-family: 'Gloria Hallelujah', cursive;*/
+font-family: 'Satisfy', cursive;
+
+
+}
+div.contenido .titulo{
+  text-align: center;
+  /*font-family: 'Open Sans', sans-serif;*/
+  margin-bottom: 0;
+  font-size: 33pt;
+  margin-top: 1px;
+
+}
+div.contenido .titulo>p{
+
+  margin: 0;
+}
+/*.foto{
+  width: 200px;
+  height: 200px;
+
+  right: 60px;
+  margin: 0 auto;
+  top: 20px;
+}*/
+.menu{
+  width: 90%;
+  /*border: 2px solid;*/
+  margin-top: 40px;
+  padding-left: 5%;
+
+}
+/**********************  FOTO MI PERFIL ***********/
+
+.div-img .img {
+
+  margin-top: 3%;
+  width: 188px;
+  height: 188px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px; /* safari y opera*/
+  -moz-border-radius: 150px; /*mozilla*/
+  transform: translate(0px);
+  -ms-transform: translate(0px);
+  -moz-transform: translate(0px);/*mozilla*/
+  -webkit-transform: translate(0px);/* safari y opera*/
+  -o-transform: translate(0px);
+
+}
+.div-img  {
+  z-index: -1;
+  /*display: block;*/
+  height: 43%;
+  top: 50%;
+  right: 0;
+  /*padding-right: 5px;*/
+  /*border: 1px solid;*/
+  text-align: center;
+}
+/*.div-img:hover .img {
+  transform: translate(-90px, 0px);
+  -ms-transform: translate(-90px, 0px);
+  -moz-transform: translate(-90px, 0px);
+  -webkit-transform: translate(-90px, 0px);
+  -o-transform: translate(-90px, 0px);
+}*/
+/**********************  MENU OPCION DE MI PERFIL ***********/
+ul.menu-opciones{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background: #ababab;
+
+    border-radius: 1em;
+    box-shadow: 2px 2px 4px #666;
+    width: 100%;
+}
+
+ul.menu-opciones li{
+    display: block;
+    margin: 0 0 1px;
+    padding: 4px 12px;
+  /*  background: #dedede;*/
+  background: #A59D93;
+    transition: 0.2s;
+    text-decoration:none;
+
+}
+
+ul.menu-opciones li:first-child{/*primer elemento de la lista darle la curvatura*/
+  border-radius: 1em 1em 0 0;
+}
+
+ul.menu-opciones li:last-child{ /*ultimo elemento de la lista darle la curvatura*/
+  border-radius: 0 0 1em 1em;
+}
+
+ul.menu-opciones li:hover{
+  padding-left: 20px;
+  background: #efefef;
+  color: black;
+}
+ul.menu-opciones a:link{
+  text-decoration:none;
+  color: black;
+}
+ul.menu-opciones a:visited{
+  text-decoration:none;
+  color: black;
+}
+
+/***********************PARTE DE HISTORIAL **************************/
+.box{
+
+  height: 128px;
+  margin-top: 20px;
+  /*margin: 5px;*/
+  display: flex; /*necesario poner en caja padre*/
+  flex-direction: column;
+  /*align-items: flex-start; /*todos los elementos juntos al principio del eje*/
+  flex-wrap: nowrap; /*Todos los elementos en una linea*/
+  align-items: stretch; /*lo mismo q el flex-start pero rellena todo el contenido*/
+
+  overflow: hidden; /*para que lo q se salga de la caja no se vea*/
+  /*box-shadow: -1px -1px rgba(0,0,0,.2);*/
+
+  /*border: 2px solid red;*/
+  font-family: 'Roboto Condensed', sans-serif;
+/*  background-color: #FFFFFF;*/
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,191,191,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(191,191,191,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,191,191,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,191,191,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,191,191,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(191,191,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bfbfbf', GradientType=0 );
+
+/*-webkit-box-shadow: inset 0px 43px 130px -1px rgba(225,225,225,1);
+-moz-box-shadow: inset 0px 43px 130px -1px rgba(225,225,225,1);/*funcionaba con mi fondo
+box-shadow: inset 0px 43px 130px -1px rgba(225,225,225,1);*/
+-webkit-box-shadow: inset 0px 43px 130px -1px rgba(214,223,229,1);
+-moz-box-shadow: inset 0px 43px 130px -1px  rgba(214,223,229,1);/*funcionaba con mi fondo*/
+box-shadow: inset 0px 43px 130px -1px  rgba(214,223,229,1);
+
+}
+/****************************PARTE DEL TITULO DEL VUELO*********************************/
+.box .titulo-vuelo{
+
+  order: 1;
+  border-bottom:  2px ridge grey;
+  height: 30px;
+}
+.box p{
+  margin: 0;
+}
+
+.box .titulo-vuelo .nombre{
+  width: auto;
+  /*border: 2px solid green;*/
+  float: left;
+  padding-left: 10px;
+  font-size: 23px;
+}
+.box .titulo-vuelo .estado{
+  /*border: 2px solid green;*/
+  float: right;
+  padding-right: 21px;
+  padding-top: 7px;
+}
+
+
+
+/**************************PARTE DETALLE*******************************/
+.box .detalle{
+  flex-grow: 2;
+  order: 2;
+  /*border: 2px solid blue;*/
+}
+.box .detalle .caract{
+  width: 77%;
+  height: 92px;
+  float: left;
+  /*border: 2px solid brown;*/
+  border-right: 2px  dashed;
+}
+.box .detalle .precio{
+  /*border: 2px solid brown;*/
+  float: left;
+}
+
+.detalle .caract .ida, .caract .vuelta{
+
+  text-align: center;
+  height: 50%;
+  /*border: 1px solid yellow;*/
+  width: 100%;
+}
+
+
+.detalle .precio{
+  width: 140px;
+  height: 95px;
+  border-bottom: 2px ridge grey;
+  border-right: 2px ridge grey;
+
+}
+
+.caract{
+  padding-top: 3px;
+  border-bottom:  2px ridge grey;
+  border-left:   2px ridge grey;
+}
+
+.precio .total{
+  padding: 18%;
+  text-align: center;
+}
+
+.precio .total .box-total{
+  text-align: center;
+  font-size: 25px;
+
+}
+.caract p.aclarar{ /*para indicar aeropuertos*/
+  color: #9c8c8c;
+  font-size: 13px;
+}
+.caract span.aclarar{
+  color: #9c8c8c;
+}
+
+/***************************CARACTERISTICAS VUELO********************************/
+.caract .img,.origen,.duracion,.destino{
+  margin: 0 auto;
+  width: 24.5%;
+  height: 100%;
+  float: left;
+  /*border: 1px solid violet;*/
+}
+.caract .img p{
+padding-top: 5px;
+}
+.caract img{
+  padding-top: 8px;
+}
+/*.caract .ida .ida-origen{
+  height: 100%;
+  width: 23%;
+  float: left;
+  border: 1px solid violet;
+}*/
+
+.caract .duracion{
+  font-size: 11px;
+}
+img.b-fija{
+  width: 94px;
+  text-align: left;
+}
+p.directo{
+  color: green;
+}
+.img img{
+  width: 60px;
+  height: 30px;
+}
+
+
+
+/*.ida-duracion span.duracion{
+  font-size: 13px;
+  padding: 1px;
+  text-align: left;
+}*/
+
+/*
+.caract .ida .ida-destino{
+  height: 100%;
+  width: 23%;
+  float: left;
+  border: 1px solid violet;
+}*/
+
+/*******************************VUELTA*********************************/
+
+.caract .vuelta .vuelta-img, .vuelta-origen, .vuelta-duracion, .vuelta-destino{
+  margin: 0 auto;
+  width: 24.5%;
+  height: 100%;
+  float: left;
+  /*border: 1px solid violet;*/
+}
+
+
+
+/*caract .vuelta .vuelta-origen{
+  height: 100%;
+  width: 23%;
+  float: left;
+  border: 1px solid violet;
+}
+
+.caract .vuelta .vuelta-duracion{
+  height: 100%;
+  width: 23%;
+  float: left;
+  border: 1px solid violet;
+}
+
+.caract .vuelta .vuelta-destino{
+  height: 100%;
+  width: 23%;
+  float: left;
+  border: 1px solid violet;
+}
+/*
+
+/*****************PARTE DE PENDIENTES***********************/
+.pendientes hr.separador{ /*barra separadora entre pendiente e historial*/
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.pendientes .pendt{
+  margin-right: 10px;
+}
+
+.pendientes .box:hover{ /*seleccion de excursiones pendientes*/
+  border-top:  2px ridge #6B6464;
+  border-right: 2px ridge #6B6464;
+  transition: 0.1s;
+/*  border-style:  groove ;*/
+  background-color: #E5E1E1;
+  opacity: 0.7;
+}

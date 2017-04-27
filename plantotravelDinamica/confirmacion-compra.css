@@ -1,0 +1,36 @@
+#informacionCompra,
+#pagoCompra,
+#pagoCompra form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#informacionCompra,
+#pagoCompra {
+    box-shadow: 0 1px 4px darkslategray;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin: 10px;
+}
+
+#pagoCompra form {
+    width: 80%;
+}
+
+#pagoCompra form input {
+    width: 100%;
+    margin: 2px;
+}
+
+#pagoCompra form input[name=submit] {
+    width: 150px;
+}
+
+#informacionCompra ul li {
+    font-family: fuenteParrafo;
+    list-style-type: none;
+}

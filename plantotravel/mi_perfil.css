@@ -1,0 +1,280 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Lobster');*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+div{
+  /*border: 2px solid;*/
+}
+body{
+/*  background-image:  linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)), url(arena.jpg);/*difuminar fondo*/
+/*  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(arena.jpg); /*difuminar fondo*/
+  background-image:url(img/arena.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /*todo esto es para hacer responsive el fondo y sea fijo*/
+  background-attachment: fixed;
+  background-color: rgb(192,192,192);
+
+/*font-family: 'Lobster', cursive;*/
+
+}
+
+.container{
+  margin: 0 auto; /**centar contenido*/
+  width: 900px;
+  height: 50%;
+  /*height: 100px;*/
+  top: 50%;
+  display: flex; /*necesario poner en caja padre*/
+  flex-direction: row;
+  align-items: flex-start;
+  /*border: 2px solid red;*/
+
+}
+
+.datos{
+  width: 200px;
+  height: 450px;
+  margin: 10px;
+  padding: 2px;
+  background-color:rgba(192,192,192,0.4);
+  /*top: 0;
+  position: fixed;   /*esto es para mantener el menu fijo mas adelante*/
+
+
+
+}
+.contenido{
+  width: 648px;
+  margin: 10px;
+  padding: 10px;
+  overflow: auto; /**sale scroll por el lado que sea necesario*/
+  font-weight: 700;
+  background-color: rgba(192,192,192,0.4);
+/*  font-family: 'Gloria Hallelujah', cursive;*/
+font-family: 'Satisfy', cursive;
+
+}
+div.contenido .titulo{
+  text-align: center;
+  /*font-family: 'Open Sans', sans-serif;*/
+  margin-bottom: 0;
+  font-size: 33pt;
+  margin-top: 1px;
+
+
+
+}
+/*.foto{
+  width: 200px;
+  height: 200px;
+
+  right: 60px;
+  margin: 0 auto;
+  top: 20px;
+}*/
+.menu{
+  width: 90%;
+  /*border: 2px solid;*/
+  margin-top: 40px;
+  padding-left: 5%;
+
+}
+/**********************  FOTO MI PERFIL ***********/
+
+.div-img .img {
+
+  margin-top: 3%;
+  width: 188px;
+  height: 188px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px; /* safari y opera*/
+  -moz-border-radius: 150px; /*mozilla*/
+  transform: translate(0px);
+  -ms-transform: translate(0px);
+  -moz-transform: translate(0px);/*mozilla*/
+  -webkit-transform: translate(0px);/* safari y opera*/
+  -o-transform: translate(0px);
+
+}
+.div-img  {
+  z-index: -1;
+  /*display: block;*/
+  height: 43%;
+  top: 50%;
+  right: 0;
+  /*padding-right: 5px;*/
+  /*border: 1px solid;*/
+  text-align: center;
+}
+/*.div-img:hover .img {
+  transform: translate(-90px, 0px);
+  -ms-transform: translate(-90px, 0px);
+  -moz-transform: translate(-90px, 0px);
+  -webkit-transform: translate(-90px, 0px);
+  -o-transform: translate(-90px, 0px);
+}*/
+/**********************  MENU OPCION DE MI PERFIL ***********/
+ul.menu-opciones{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background: #ababab;
+
+    border-radius: 1em;
+    box-shadow: 2px 2px 4px #666;
+    width: 100%;
+}
+
+ul.menu-opciones li{
+    display: block;
+    margin: 0 0 1px;
+    padding: 4px 12px;
+    background: #dedede;
+    transition: 0.2s;
+    text-decoration:none;
+
+}
+
+ul.menu-opciones li:first-child{/*primer elemento de la lista darle la curvatura*/
+  border-radius: 1em 1em 0 0;
+}
+
+ul.menu-opciones li:last-child{ /*ultimo elemento de la lista darle la curvatura*/
+  border-radius: 0 0 1em 1em;
+}
+
+ul.menu-opciones li:hover{
+  padding-left: 20px;
+  background: #efefef;
+  color: black;
+}
+ul.menu-opciones a:link{
+  text-decoration:none;
+  color: black;
+}
+ul.menu-opciones a:visited{
+  text-decoration:none;
+  color: black;
+}
+/**********************  FORMULARIO DE DATOS ***********/
+div.form form.form-style *:focus{
+  outline: none;
+}
+
+div.form form.form-style ul{
+  width:550px;
+  list-style-type:none;
+  list-style-position:outside;
+}
+
+div.form form.form-style li{
+  padding:6px;
+  border-bottom:1px solid #eee;
+  position:relative;
+}
+div.form form.form-style li:first-child, div.form form.form-style li:last-child {
+    border-bottom:1px solid #777;
+}
+form.form-style label {
+    width:200px;
+    margin-top: 0;
+    display:inline-block;
+    float:left;
+    /*padding:6px;*/
+    text-align: right;
+  /*  padding-right: 10px;*/
+    font-size: 17pt;
+
+}
+form.form-style label.foto_per_label{
+  width: 180px;
+
+}
+form.form-style input {
+    height:15px;
+    width:220px;
+    padding:5px 8px;
+    transition: padding .25s; /*darle velocidad al efecto*/
+    margin-left: 29px;
+}
+/*form.form-style input:required{ /*para los campos obligatorios*
+  background: #fff url(images/asterisco.png) no-repeat 98% top ; /*pone color de fondo, imagen y la coloca a un tanto pociento de la posicion(center, top, right,..)*//*
+
+}*/
+
+form.form-style input:focus{
+    padding-right:50px;
+}
+form.form-style input.foto_per{ /*boton de subida de fichero*/
+    width: 320px;
+    border: none;
+    background:none;
+    margin-left: 22px;
+}
+
+form.form-style input.check{
+
+position: absolute;
+right: 19px;
+
+}
+form.form-style input:focus:invalid{ /*Cuando el contenido donde esta el focus es invalido*/
+    background: #fff url(img/exclamacion.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+form.form-style input:required:valid{ /* when a field is considered valid by the browser */
+    background: #fff url(img/ok.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+form.form-style input{
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0.5px solid #000000;
+  background-color: #f2f2f2;
+  font-weight: 700;
+}
+
+form.form-style button.submit {
+    margin-left:242px;
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e)); /*efecto degradacion para IE 10 y Firefox 10 en adelante*/
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);/*efecto degradacion para safari chrome*/
+    background: -moz-linear-gradient(top, #68b12f, #50911e);/*efecto degradacion para mozilla*/
+    background: -o-linear-gradient(top, #68b12f, #50911e);/*efecto degradacion para opera*/
+    background: linear-gradient(top, #68b12f, #50911e);/*efecto degradacion para resto*/
+
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    /*border-radius: 3px;*/
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-shadow: 0 -1px 0 #396715;
+    /*text-align: center;*/
+}
+form.form-style button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+form.form-style button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}

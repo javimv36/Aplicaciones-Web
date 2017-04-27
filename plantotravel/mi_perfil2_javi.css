@@ -1,0 +1,351 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Lobster');*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+div{
+  /*border: 2px solid;*/
+}
+body{
+/*  background-image:  linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)), url(arena.jpg);/*difuminar fondo*/
+/*  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url(arena.jpg); /*difuminar fondo*/
+/*  background-image:url(../images/arena.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /*todo esto es para hacer responsive el fondo y sea fijo*/
+  /*background-attachment: fixed;*/
+  /*background-color: #F7F7F7;*/
+  background-color: #E3F2FD;
+
+/*font-family: 'Lobster', cursive;*/
+
+}
+
+.container{
+  margin: 0 auto; /**centar contenido*/
+  width: 900px;
+  height: 50%;
+  /*height: 100px;*/
+  top: 50%;
+  display: flex; /*necesario poner en caja padre*/
+  flex-direction: row;
+  align-items: flex-start;
+  /*border: 2px solid red;*/
+  /*background-color: #E5E5E5;*/
+
+}
+
+.datos{
+  width: 200px;
+  height: 450px;
+  margin: 10px;
+  padding: 2px;
+  background-color:rgba(192,192,192,0.4);
+  /*top: 0;
+  position: fixed;   /*esto es para mantener el menu fijo mas adelante*/
+
+
+
+}
+.contenido{
+  width: 648px;
+  margin: 10px;
+  padding: 10px;
+  overflow: auto; /**sale scroll por el lado que sea necesario*/
+  font-weight: 700;
+  background-color: rgba(192,192,192,0.4);
+/*  font-family: 'Gloria Hallelujah', cursive;*/
+font-family: 'Satisfy', cursive;
+
+
+}
+div.contenido .titulo{
+  text-align: center;
+  /*font-family: 'Open Sans', sans-serif;*/
+  margin-bottom: 0;
+  font-size: 33pt;
+  margin-top: 1px;
+
+}
+div.contenido .titulo>p{
+
+  margin: 0;
+}
+/*.foto{
+  width: 200px;
+  height: 200px;
+
+  right: 60px;
+  margin: 0 auto;
+  top: 20px;
+}*/
+.menu{
+  width: 90%;
+  /*border: 2px solid;*/
+  margin-top: 40px;
+  padding-left: 5%;
+
+}
+/**********************  FOTO MI PERFIL ***********/
+
+.div-img .img {
+
+  margin-top: 3%;
+  width: 188px;
+  height: 188px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px; /* safari y opera*/
+  -moz-border-radius: 150px; /*mozilla*/
+  transform: translate(0px);
+  -ms-transform: translate(0px);
+  -moz-transform: translate(0px);/*mozilla*/
+  -webkit-transform: translate(0px);/* safari y opera*/
+  -o-transform: translate(0px);
+
+}
+.div-img  {
+  z-index: -1;
+  /*display: block;*/
+  height: 43%;
+  top: 50%;
+  right: 0;
+  /*padding-right: 5px;*/
+  /*border: 1px solid;*/
+  text-align: center;
+}
+/*.div-img:hover .img {
+  transform: translate(-90px, 0px);
+  -ms-transform: translate(-90px, 0px);
+  -moz-transform: translate(-90px, 0px);
+  -webkit-transform: translate(-90px, 0px);
+  -o-transform: translate(-90px, 0px);
+}*/
+/**********************  MENU OPCION DE MI PERFIL ***********/
+ul.menu-opciones{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background: #ababab;
+
+    border-radius: 1em;
+    box-shadow: 2px 2px 4px #666;
+    width: 100%;
+}
+
+ul.menu-opciones li{
+    display: block;
+    margin: 0 0 1px;
+    padding: 4px 12px;
+  /*  background: #dedede;*/
+  background: #A59D93;
+    transition: 0.2s;
+    text-decoration:none;
+
+}
+
+ul.menu-opciones li:first-child{/*primer elemento de la lista darle la curvatura*/
+  border-radius: 1em 1em 0 0;
+}
+
+ul.menu-opciones li:last-child{ /*ultimo elemento de la lista darle la curvatura*/
+  border-radius: 0 0 1em 1em;
+}
+
+ul.menu-opciones li:hover{
+  padding-left: 20px;
+  background: #efefef;
+  color: black;
+}
+ul.menu-opciones a:link{
+  text-decoration:none;
+  color: black;
+}
+ul.menu-opciones a:visited{
+  text-decoration:none;
+  color: black;
+}
+
+/***********************PARTE DE HISTORIAL **************************/
+.box{
+
+  height: 128px;
+  margin-top: 20px;
+  /*margin: 5px;*/
+  display: flex; /*necesario poner en caja padre*/
+  flex-direction: row;
+  /*align-items: flex-start;*/
+  align-items: stretch; /*lo mismo q el flex-start pero rellena todo el contenido*/
+  border-bottom: 2px outset #6B6464;
+  border-left: 2px outset #6B6464;
+  -moz-border-radius-topleft: 90px;
+  -webkit-border-top-left-radius: 90px;
+   border-top-left-radius: 90px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+  transform: translate(0px);
+  -ms-transform: translate(0px);
+  -moz-transform: translate(0px);/*mozilla*/
+  -webkit-transform: translate(0px);/* safari y opera*/
+  -o-transform: translate(0px);
+  overflow: hidden; /*para que lo q se salga de la caja no se vea*/
+  box-shadow: -1px -1px rgba(0,0,0,.2);
+/*  box-shadow:  0 1px 3px 0 rgba(37,32,51,.3)*/
+
+
+/*efectos*/
+-webkit-box-shadow: 10px 10px 72px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 72px -19px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 72px -19px rgba(0,0,0,0.75);
+background-color:;
+}
+
+.box .box-img {
+  height: 79px;
+  width: 150px;
+  order: 1;
+  /*border: 2px solid red;*/
+  margin: 5px;
+  margin-top: 15px;
+
+}
+.box-img .img-foto{
+  height: 79px;
+  width: 150px;
+  order: 1;
+
+}
+.box .box-desc{
+
+  order: 2;
+  flex-grow: 2;
+  /*border: 2px solid red;*/
+  margin: 0 auto;
+  display: flex; /*necesario poner en caja padre*/
+  flex-direction: column;
+  /*align-items: flex-start;*/
+  align-items: stretch; /*lo mismo q el flex-start pero rellena todo el contenido*/
+  justify-content: flex-star;
+
+}
+
+.box .box-desc .voto{
+  /*margin: 0 auto;*/
+  height: 33px;
+  /*border: 1px solid red;*/
+  text-align: right;
+  padding-right: 10px;
+
+
+}
+.box-desc .voto .titulo{
+/*  border: 2px solid red;*/
+  text-align: left;
+  float: left;
+  height: 20px;
+
+  height: 30px;
+  width: 296px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+.box-desc .voto .titulo>p{
+
+  margin: 0 ;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 25px;
+
+}
+
+.voto .titulo .barra-titulo{
+  margin: 0;
+  /*display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;*/
+  height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+
+}
+
+
+/********************************** VOTACION **************/
+
+.voto .voto-estrellas{
+
+  height: 30px;
+  float: right;
+  margin: 0 ;
+  font-size: 0;
+  display: inline-block;
+  /*transform: translate(243%, -36%);*/
+  float: left;
+
+}
+
+.voto .voto-estrellas>a{
+
+  text-decoration: none;
+	display: inline-block;
+	font-size: 32px;
+	font-size: 31px;
+	color: #888;
+}
+
+.voto .voto-estrellas:hover a{
+  color: #f6ff00;
+}
+.voto .voto-estrellas > a:hover ~ a{ /* para seleccionar tods los hijos*/
+  color: #888;
+}
+/***********************************DESCRIPCION************/
+.desc{
+  margin: 0 auto;
+}
+.box .box-desc .desc>p{ /*explicacion de las excursiones*/
+  /*margin: 0 auto;*/
+  height: 100%;
+  /*border: 1px solid red;*/
+  margin: 0 ;
+  padding-top: 10px;
+  padding-left: 10px;
+  line-height:18px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.box .box-desc .desc .read-more{ /*leer mas de box*/
+text-decoration: underline;
+text-align: right;
+
+}
+
+/*****************PARTE DE PENDIENTES***********************/
+.pendientes hr.separador{ /*barra separadora entre pendiente e historial*/
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.pendientes .pendt{
+  margin-right: 10px;
+}
+
+.pendientes .box:hover{ /*seleccion de excursiones pendientes*/
+  border-top:  2px ridge #6B6464;
+  border-right: 2px ridge #6B6464;
+  transition: 0.1s;
+/*  border-style:  groove ;*/
+  background-color: #E5E1E1;
+  opacity: 0.7;
+}

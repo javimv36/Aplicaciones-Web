@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="back-office.css" type="text/css">
+    <link id="estiloCompartido" rel="stylesheet" type="distribucion.css"/>
+    <link id="estiloCompra" rel="stylesheet" type="confirmacion-compra.css"/>
+    <link id="estiloCabecera" rel="stylesheet" type="cabecera.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".vuelos").click(function(){
+            $(".vuelosjq").slideToggle();
+        });
+    });
+    $(document).ready(function(){
+        $(".excursion").click(function(){
+            $(".excursionjq").slideToggle();
+        });
+    });
+    $(document).ready(function(){
+        $(".usuarios").click(function(){
+            $(".usuariosjq").slideToggle();
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="cabecera">
+        <img class="logo" src="img/admin.png" alt="admin">
+        <input class="logout" type=image src="img/logout.png">
+    </div>
+    <div class="container">
+      <menu class="sidebar-izq">
+          <ul class="menu">
+              <li><a class="" href="index_admin.html">Inicio</a></li>
+
+              <li><a class="vuelos">Vuelos</a></li>
+              <div class=vuelosjq>
+              <li><a class="vuelos" href="mod_vuelo_admin.html">Modificar</a></li>
+                <li><a class="vuelos" href="list_vuelo_admin.html">Mostrar</a></li>
+
+              </div>
+              <li><a class="excursion">Excursion</a></li>
+              <div class=excursionjq>
+                <li><a class="excursion" href="mod_excur_admin.html">Modificar</a></li>
+              <li><a class="excursion" href="list_excur_admin.html">Mostrar</a></li>
+
+            </div>
+            <li><a class="usuarios">Usuarios</a></li>
+            <div class="usuariosjq">
+              <li><a class="usuarios" href="mod_usuario_admin.html">Modificar</a></li>
+              <li><a class="usuarios" href="list_usuario_admin.html">Mostrar</a></li>
+
+            </div>
+            </ul>
+          </ul>
+      </menu>
+      <div class="contenido">
+        <p>Bienvenido.
+          <div class="estadisticas">
+				<ul>
+					<li><span class="esta reg">Registros hoy</span></li>
+					<li><span class="esta vis">Visitas hoy</span></li>
+				</ul>
+			</div>
+<!--comienzo grafico gordito-->
+      <div class="donut-chart-block block">
+                    <div class="donut-chart">
+ <!--PORCIONES GRAFICO CIRCULAR-->
+      <div id="porcion1" class="recorte"><div class="quesito" data-rel="21"></div></div>
+     <div id="porcion2" class="recorte"><div class="quesito" data-rel="39"></div></div>
+     <div id="porcion3" class="recorte"><div class="quesito" data-rel="31"></div></div>
+     <div id="porcionFin" class="recorte"><div class="quesito" data-rel="9"></div></div>
+
+                       </div>
+                </div>
+<!--fin grafico gordito-->
+
+<div class="texto"><p>Destinos más comprados el ultimo mes</p></div>
+<div class="table-index">
+
+  <div class="index1">
+    <p>Barcelona</p>
+  </div>
+  <div class="index2">
+      <p>Praga</p>
+  </div>
+  <div class="index3">
+      <p>Estocolmo</p>
+  </div>
+  <div class="index4">
+      <p>Nueva york</p>
+  </div></div></div>
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+</html>

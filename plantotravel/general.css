@@ -1,0 +1,33 @@
+#contenido {
+	margin: 30px 200px;
+}
+
+h1, h2 {
+	color: #87CEFA;
+}
+
+@font-face {
+    font-family: tit;
+    src: url(fonts/Postface.otf);
+}
+
+h3 {
+	font-family: tit;
+}
+
+#bloqueContenido{
+	width: 100%;
+}
+
+#bloqueContenido img{
+	width: 100%;
+	
+}
+
+.listaFaq ul {
+	list-style-type: none;
+}
+
+.listaFaq li {
+	margin-top: 10px;
+}
