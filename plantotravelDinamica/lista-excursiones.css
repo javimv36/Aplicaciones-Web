@@ -1,0 +1,39 @@
+
+.excursion {
+    float: left;
+    margin: 5px;
+    /*  border: 1px solid darkgrey;*/
+    border-radius: 5px;
+    box-shadow: 0 1px 4px darkgray;
+    background-color: white;
+}
+
+.excursion:hover {
+    background-color: #E3F2FD;
+    box-shadow: 0 1px 4px darkslategray;
+}
+
+.datosExcursion {
+    padding: 5px;
+    width: 75%;
+    float: left;
+}
+
+.excursion img {
+    width: 15%;
+    float: left;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.botonCompra {
+    font-weight: bold;
+    text-align: center;
+}
+
+.elegir {
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    float: right;
+}

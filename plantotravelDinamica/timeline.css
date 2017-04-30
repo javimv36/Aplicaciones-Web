@@ -1,60 +1,81 @@
-.green {
-      background-color: greenyellow;
-      border-color: green;
-    }
-
 
     /* create a custom sized dot at the bottom of the red item */
-    .vis-item.red {
-      background-color: red;
-      border-color: darkred;
-      color: white;
-      font-family: monospace;
+    .vis-item.morning {
+      background-color: #90caf9;
+      border-color: #2196F3;
+      font-family: fuenteParrafo;
       box-shadow: 0 0 10px gray;
     }
-    .vis-item.vis-dot.red {
+    .vis-item.vis-dot.morning {
       border-radius: 10px;
       border-width: 10px;
     }
-    .vis-item.vis-line.red {
+    .vis-item.vis-line.morning {
       border-width: 5px;
     }
-    .vis-item.vis-box.red {
-      border-radius: 0;
+    .vis-item.vis-box.morning {
+      border-radius: 5px;
       border-width: 2px;
-      font-size: 24pt;
+      font-size: 10pt;
       font-weight: bold;
     }
-
-    .vis-item.orange {
-      background-color: gold;
-      border-color: orange;
-    }
-    .vis-item.vis-selected.orange {
+    .vis-item.vis-selected.morning,
+     .vis-item.vis-selected.evening {
       /* custom colors for selected orange items */
-      background-color: orange;
-      border-color: orangered;
+      background-color: #A5D6A7;
+      border-color: #4CAF50;
     }
-
-    .vis-item.magenta {
-      background-color: magenta;
-      border-color: purple;
-      color: white;
-    }
-
-    /* our custom classes overrule the styles for selected events,
-       so lets define a new style for the selected events */
-    .vis-item.vis-selected {
-      background-color: white;
-      border-color: black;
-      color: black;
+ .vis-item.evening{
+      background-color: #FFE082;
+      border-color: #FFC107;
+      font-family: fuenteParrafo;
       box-shadow: 0 0 10px gray;
+    }
+    .vis-item.vis-dot.evening {
+      border-radius: 10px;
+      border-width: 10px;
+    }
+    .vis-item.vis-line.evening {
+      border-width: 5px;
+    }
+    .vis-item.vis-box.evening {
+      border-radius: 5px;
+      border-width: 2px;
+      font-size: 10pt;
+      font-weight: bold;
     }
 
 #visualization{
   box-shadow: 0 1px 4px darkslategray;
-  background-color: white;
+background-color: white;
   border-radius: 5px;
   margin-left: 10px;
   width: 100%;
 }
+
+.vis.timeline .item {
+      border-color: #acacac;
+      background-color: #efefef;
+      box-shadow: 5px 5px 10px rgba(128,128,128, 0.3);
+    }
+  
+
+    table .description {
+      font-size: 20px;
+      font-family: fuenteTitulo;
+    }
+
+    table img{
+      height: 50px;
+      border-radius: 5px;
+       box-shadow: 5px 5px 10px rgba(128,128,128, 0.3);
+    }
+
+    .logo {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .logo img {
+      width: 120px;
+    }
